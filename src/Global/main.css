@@ -63,6 +63,7 @@ button {
 p {
   line-height: 30px;
   color: var(--paragraph-clr);
+  font-weight: var(--fw-500);
 }
 
 /* Classes */
@@ -179,4 +180,13 @@ p {
   --padding: 2rem;
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
+}
+
+/* Section */
+
+.p50-section {
+  padding-block: 50px;
+}
+.p100-section {
+  padding-block: 100px;
 }

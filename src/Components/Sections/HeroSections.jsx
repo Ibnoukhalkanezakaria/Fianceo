@@ -5,7 +5,7 @@ import imageHero from "../../assets/hero-img.svg";
 const HeroSections = () => {
   return (
     <div className="Wrapper">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-8 py-[70px] items-center">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-8 p50-section items-center">
         <div>
           <h1 className="f1 fw-700 ">
             Discover a better way to manage spendings
