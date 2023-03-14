@@ -1,10 +1,12 @@
 import React from "react";
-import Navbar from "../../Components/Navbar/Navbar";
+import HeroSections from "../../Components/Sections/HeroSections";
+import TrustedSection from "../../Components/Sections/TrustedSection";
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <HeroSections />
+      <TrustedSection />
     </div>
   );
 };

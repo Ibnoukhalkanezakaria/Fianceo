@@ -8,11 +8,12 @@
   /* Colors */
   --primary-clr: #002f86;
   --secondary-clr: #023ba5;
-  --color3: #36c857;
+  --color3: #42c760;
   --color4: #00b3ff;
   --color5: #000000;
   --color6: #dfdddd79;
   --color7: #ffffffff;
+  --paragraph-clr: rgb(0, 0, 0, 0.9);
   /* FonSize */
   --f1: 62px;
   --f2: 44px;
@@ -54,6 +55,14 @@ ul {
 }
 img {
   max-width: 100%;
+}
+button {
+  outline: none;
+  border: none;
+}
+p {
+  line-height: 30px;
+  color: var(--paragraph-clr);
 }
 
 /* Classes */
@@ -166,7 +175,7 @@ img {
 }
 
 .Wrapper {
-  --max-width: 1340px;
+  --max-width: 1240px;
   --padding: 2rem;
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;

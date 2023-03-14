@@ -5,10 +5,12 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import Integeation from "./Pages/Integeation/Integeation";
 import Pricing from "./Pages/Pricing/Pricing";
 import Blog from "./Pages/Blog/Blog";
+import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<AboutUs />} />

@@ -9,24 +9,34 @@ const Navbar = () => {
     <div className="Wrapper-nav">
       <div className="flex items-center py-8 justify-between">
         <div className="logo">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="Logo" aria-label="Logo" />
         </div>
         <div>
-          <ul className="flex items-center">
+          <ul className="flex items-center" role="list" aria-label="Nav-Links">
             <li className="p-4">
-              <Link to="/">Home</Link>
+              <Link to="/" className="color5">
+                Home
+              </Link>
             </li>
             <li className="p-4">
-              <Link to="/aboutUs">About Us</Link>
+              <Link to="/aboutUs" className="color5">
+                About Us
+              </Link>
             </li>
             <li className="p-4">
-              <Link to="/integeation">Integeation</Link>
+              <Link to="/integeation" className="color5">
+                Integeation
+              </Link>
             </li>
             <li className="p-4">
-              <Link to="/pricing">Pricing</Link>
+              <Link to="/pricing" className="color5">
+                Pricing
+              </Link>
             </li>
             <li className="p-4">
-              <Link to="/blog">Blog</Link>
+              <Link to="/blog" className="color5">
+                Blog
+              </Link>
             </li>
           </ul>
         </div>
