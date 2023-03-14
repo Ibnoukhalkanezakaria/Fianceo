@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/img-logo.svg";
-import PrimaryButton from "../Buttons/PrimaryButton";
+import { TfiFacebook, TfiLinkedin } from "react-icons/tfi";
+import { TiSocialTwitter } from "react-icons/ti";
+import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
@@ -10,7 +12,7 @@ const Footer = () => {
         <img src={Logo} alt="Logo" aria-label="Logo" />
       </div>
       <div className="flex flex-row py-10">
-        <div className="basis-1/3">
+        <div className="basis-1/4">
           <h3 className="color5 fw-700 f5 pb-6">Product</h3>
           <ul role="list" aria-label="Nav-Links">
             <li className="pb-5">
@@ -30,7 +32,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="basis-1/3">
+        <div className="basis-1/4">
           <h3 className="color5 fw-700 f5 pb-6">Company</h3>
           <ul role="list" aria-label="Nav-Links">
             <li className="pb-5">
@@ -55,7 +57,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="basis-1/1">
+        <div className="basis-1/2">
           <h3 className="color5 fw-700 f5 pb-6">Join our newsletter</h3>
           <form className="flex">
             <input
@@ -71,8 +73,8 @@ const Footer = () => {
             />
           </form>
           <ul className="list-disc pt-6 pl-[3%] ">
-            <li className="">
-              <span className="text-[#00000080]">
+            <li className="max-w-[500px] leading-[25px]">
+              <span className="text-[#00000080] ">
                 Will send you weekly updates for your better finance management
               </span>
             </li>
@@ -80,18 +82,42 @@ const Footer = () => {
         </div>
       </div>
       <hr className="mt-5" />
-      <div className="py-6 flex justify-between">
+      <div className="py-8 flex flex-row gap-10">
         <div>
-          <p className="">
+          <p className="fw-400 ">
             © Ibnoukhalkane 2023 Fianceo. Design by Webflow, checkout the
             repository
-            <a href="https://github.com/Ibnoukhalkanezakaria/Fianceo">here</a>
+            <a
+              target="_blank"
+              href="https://github.com/Ibnoukhalkanezakaria/Fianceo"
+              className="color3
+              pl-2"
+            >
+              here
+            </a>
           </p>
         </div>
-        <div>
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
+        <div className="flex gap-10 items-center">
+          <span className="cursor-pointer">
+            <a target="_blank" href="https://www.facebook.com/">
+              <TfiFacebook />
+            </a>
+          </span>
+          <span className="cursor-pointer">
+            <a target="_blank" href="https://twitter.com/home">
+              <TiSocialTwitter />
+            </a>
+          </span>
+          <span className="cursor-pointer">
+            <a target="_blank" href="https://www.linkedin.com/">
+              <TfiLinkedin />
+            </a>
+          </span>
+          <span className="cursor-pointer">
+            <a target="_blank" href="https://www.instagram.com/">
+              <RiInstagramFill />
+            </a>
+          </span>
         </div>
       </div>
     </div>
