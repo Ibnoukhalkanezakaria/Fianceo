@@ -7,13 +7,14 @@
 :root {
   /* Colors */
   --primary-clr: #002f86;
-  --secondary-clr: #023ba5;
+  --secondary-clr: rgb(2, 59, 165);
   --color3: #42c760;
   --color4: #00b3ff;
   --color5: #000000;
   --color6: #dfdddd79;
   --color7: #ffffffff;
-  --paragraph-clr: rgb(0, 0, 0, 0.9);
+  --paragraph-clr: #000000e6;
+  --paragraph-clr2: rgba(255, 255, 255, 0.9);
   /* FonSize */
   --f1: 62px;
   --f2: 44px;
@@ -189,4 +190,16 @@ p {
 }
 .p100-section {
   padding-block: 100px;
+}
+
+.b-full {
+  border-radius: 50%;
+  background-color: rgb(2, 59, 165, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 90px;
+  color: var(--color7);
+  font-size: var(--f2);
 }

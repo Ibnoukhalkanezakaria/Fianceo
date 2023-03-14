@@ -6,6 +6,7 @@ import Integeation from "./Pages/Integeation/Integeation";
 import Pricing from "./Pages/Pricing/Pricing";
 import Blog from "./Pages/Blog/Blog";
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

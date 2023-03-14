@@ -4,6 +4,7 @@ import TrustedSection from "../../Components/Sections/TrustedSection";
 import FinanceSection from "../../Components/Sections/FinanceSection";
 import SpendingsSection from "../../Components/Sections/SpendingsSection";
 import CompanySection from "../../Components/Sections/CompanySection";
+import ExpensesSection from "../../Components/Sections/ExpensesSection";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <FinanceSection />
       <SpendingsSection />
       <CompanySection />
+      <ExpensesSection />
     </div>
   );
 };
