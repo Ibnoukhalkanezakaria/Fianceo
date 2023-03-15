@@ -9,12 +9,12 @@ const CompanySection = () => {
           <h1 className="color5 f2 fw-700">
             See where the company money goes in real-time
           </h1>
-          <p className="py-2 max-w-[400px]">
+          <p className="py-2 max-w-[500px]">
             Leverage agile frameworks to provide a robust synopsis for high
             level overviews. Iterative approaches to corporate strategy foster
             collaborative thinking to further
           </p>
-          <p className="py-2 max-w-[400px]">
+          <p className="py-2 max-w-[500px]">
             the overall value proposition. Organically grow the holistic world
             view of disruptive innovation
           </p>

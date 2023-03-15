@@ -1,6 +1,7 @@
 import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import { IntregratedSectionsData } from "../../Data/data";
+import { Link } from "react-router-dom";
 
 const IntregratedSections = () => {
   const { title, List } = IntregratedSectionsData;
@@ -22,7 +23,9 @@ const IntregratedSections = () => {
           }).slice(0, 3)}
         </div>
         <div className="flex justify-center pt-20">
-          <PrimaryButton>See All Intregrations</PrimaryButton>
+          <Link to="/integeation">
+            <PrimaryButton>See All Intregrations</PrimaryButton>
+          </Link>
         </div>
       </div>
     </div>

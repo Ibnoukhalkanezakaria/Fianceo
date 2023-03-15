@@ -177,7 +177,7 @@ p {
 }
 
 .Wrapper {
-  --max-width: 1240px;
+  --max-width: 1200px;
   --padding: 2rem;
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
@@ -191,6 +191,9 @@ p {
 .p100-section {
   padding-block: 100px;
 }
+.p120-section {
+  padding-block: 120px;
+}
 
 .b-full {
   border-radius: 50%;
@@ -202,4 +205,10 @@ p {
   height: 90px;
   color: var(--color7);
   font-size: var(--f2);
+}
+
+/* Shadow */
+
+.bg-shadow {
+  box-shadow: 0 0 50px 1px #ebeaea;
 }

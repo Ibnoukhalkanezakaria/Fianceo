@@ -9,7 +9,9 @@ const Navbar = () => {
     <div className="Wrapper-nav">
       <div className="flex items-center py-8 justify-between">
         <div className="logo">
-          <img src={Logo} alt="Logo" aria-label="Logo" />
+          <Link to="/">
+            <img src={Logo} alt="Logo" aria-label="Logo" />
+          </Link>
         </div>
         <div>
           <ul className="flex items-center" role="list" aria-label="Nav-Links">

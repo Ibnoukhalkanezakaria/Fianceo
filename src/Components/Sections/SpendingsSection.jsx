@@ -5,7 +5,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 const SpendingsSection = () => {
   return (
     <div className="Wrapper p100-section">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-20 items-center">
         <div>
           <img src={SpendingsImage} alt="Image" />
         </div>

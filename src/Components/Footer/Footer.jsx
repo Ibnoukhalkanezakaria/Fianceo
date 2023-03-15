@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="mt-5" />
-      <div className="py-8 flex flex-row gap-10">
+      <div className="py-8 flex flex-row justify-between">
         <div>
           <p className="fw-400 ">
             © Ibnoukhalkane 2023 Fianceo. Design by Webflow, checkout the
