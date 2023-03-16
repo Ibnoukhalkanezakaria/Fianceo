@@ -216,3 +216,7 @@ p {
 .bg-shadow {
   box-shadow: 0 0 50px 1px #ebeaea;
 }
+
+.circle {
+  background-color: red;
+}
