@@ -10,7 +10,7 @@ const CustomersSections = () => {
     <div className="pt-[120px] pb-[50px] Wrapper">
       <h2 className="color5 f2 fw-700 text-center">Love Form Customers</h2>
       <SliderCnp />
-      <h2 className="color5 f2 fw-700 text-center max-w-[700px] m-auto">
+      {/* <h2 className="color5 f2 fw-700 text-center max-w-[700px] m-auto">
         {title}
       </h2>
       <div className="py-10 grid md:grid-cols-2 grid-cols-1">
@@ -45,7 +45,7 @@ const CustomersSections = () => {
             );
           }).slice(1)}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

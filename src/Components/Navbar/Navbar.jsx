@@ -8,7 +8,7 @@ import { HiBars3 } from "react-icons/hi2";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="Wrapper-nav">
+    <div className="md:max-w-[1440px] max-w-[1200px] m-auto sm:px-[2%] px-[3%]">
       <div className="flex items-center py-8 justify-between">
         <div className="logo">
           <Link to="/">
@@ -17,7 +17,7 @@ const Navbar = () => {
         </div>
         <div>
           <ul
-            className={`lg:flex lg:flex-row lg:static lg:bg-color7 bg-[#F9F9F9] w-full h-screen absolute ${
+            className={`lg:flex lg:flex-row lg:static lg:bg-color7 bg-[#F9F9F9] w-full  absolute ${
               open ? "opacity-100 " : "opacity-0 "
             } top-[25%] pl-8 left-[-1rem] flex-col items-center`}
             role="list"
@@ -51,9 +51,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center ">
-          <div className="gap-4 sm:flex absolute left-[-1rem] bu sm:static">
-            <LogInButton>Log in</LogInButton>
-            <SignUpButton>Sign Up</SignUpButton>
+          <div className="gap-4 sm:flex absolute left-[2rem] bottom-[10%] sm:static">
+            {/* <LogInButton>Log in</LogInButton> */}
+            {/* <SignUpButton>Sign Up</SignUpButton> */}
           </div>
           <div
             onClick={() => setOpen(!open)}

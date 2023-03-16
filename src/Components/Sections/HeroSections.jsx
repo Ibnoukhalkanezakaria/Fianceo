@@ -7,7 +7,7 @@ const HeroSections = () => {
     <div className="Wrapper">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8 p50-section items-center">
         <div>
-          <h1 className="f1 fw-700 ">
+          <h1 className="md:text-5xl  sm:text-4xl text-3xl fw-700 ">
             Discover a better way to manage spendings
           </h1>
           <p className="max-w-[400px]">

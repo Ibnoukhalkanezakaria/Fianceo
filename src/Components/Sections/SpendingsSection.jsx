@@ -10,7 +10,7 @@ const SpendingsSection = () => {
           <img src={SpendingsImage} alt="Image" />
         </div>
         <div>
-          <h1 className="color5 f2 fw-700">
+          <h1 className="color5 fw-700 md:text-4xl  sm:text-3xl text-2xl">
             Get detailed report about your spendings
           </h1>
           <p className="py-2 max-w-[400px]">

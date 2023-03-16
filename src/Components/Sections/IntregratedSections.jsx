@@ -8,7 +8,7 @@ const IntregratedSections = () => {
   return (
     <div className="bg-[#F9F9F9]">
       <div className="p100-section Wrapper">
-        <h1 className="color5 f2 fw-700 text-center max-w-[780px] m-auto">
+        <h1 className="color5 md:text-4xl  sm:text-3xl text-2xl fw-700 text-center max-w-[780px] m-auto">
           {title}
         </h1>
         <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 pt-16">

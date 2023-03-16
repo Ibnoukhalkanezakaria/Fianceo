@@ -6,9 +6,9 @@ const Integeation = () => {
   const { List } = IntregratedSectionsData;
   return (
     <div>
-      {/* <div className="bg-[#F9F9F9]">
+      <div className="bg-[#F9F9F9]">
         <div className="Wrapper p100-section">
-          <h1 className="color5 fw-700 f1 text-center max-w-[900px] m-auto">
+          <h1 className="color5 fw-700 md:text-5xl  sm:text-4xl text-3xl text-center max-w-[900px] m-auto">
             Intregrated with your favourite apps
           </h1>
           <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 pt-16">
@@ -24,7 +24,7 @@ const Integeation = () => {
           </div>
         </div>
       </div>
-      <DiscoverSections /> */}
+      <DiscoverSections />
     </div>
   );
 };

@@ -6,7 +6,7 @@ const CompanySection = () => {
     <div className="Wrapper p100-section">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
         <div>
-          <h1 className="color5 f2 fw-700">
+          <h1 className="color5 md:text-4xl  sm:text-3xl text-2xl fw-700">
             See where the company money goes in real-time
           </h1>
           <p className="py-2 max-w-[500px]">

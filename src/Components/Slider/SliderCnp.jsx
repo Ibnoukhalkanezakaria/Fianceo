@@ -33,25 +33,27 @@ const SliderCnp = () => {
           >
             {List.map((item, i) => {
               return (
-                <SwiperSlide key={i} className="bg-white p-[50px]">
+                <SwiperSlide key={i} className="bg-white lg:p-[50px]">
                   <div className="grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-8 items-center">
-                    <div className="relative">
-                      <img
-                        src={stick4}
-                        alt=""
-                        className="bottom-[-15%] left-[20%] absolute rotate-90"
-                      />
-                      <img src={item.profile} alt="" />
-                      <img
-                        src={stick3}
-                        alt=""
-                        className="absolute right-[15%] top-[80%] w-[150px] z-[-1]"
-                      />
-                      <img
-                        src={stick5}
-                        alt=""
-                        className="absolute left-[-8%] top-[-8.8%] z-[-1]"
-                      />
+                    <div>
+                      <div className="relative">
+                        <img
+                          src={stick4}
+                          alt=""
+                          className="bottom-[-15%] left-[20%] absolute rotate-90"
+                        />
+                        <img src={item.profile} alt="" />
+                        <img
+                          src={stick3}
+                          alt=""
+                          className="absolute right-[15%] top-[80%] w-[150px] z-[-1]"
+                        />
+                        <img
+                          src={stick5}
+                          alt=""
+                          className="absolute left-[-8%] top-[-8.8%] z-[-1]"
+                        />
+                      </div>
                     </div>
                     <div>
                       <div className="flex gap-2">
