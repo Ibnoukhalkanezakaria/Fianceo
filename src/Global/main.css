@@ -217,6 +217,14 @@ p {
   box-shadow: 0 0 50px 1px #ebeaea;
 }
 
-.circle {
-  background-color: red;
+@media (max-width: 1107px) {
+  .order-footer-3 {
+    order: 3;
+  }
+  .order-footer-2 {
+    order: 2;
+  }
+  .flex-one {
+    width: 100%;
+  }
 }
