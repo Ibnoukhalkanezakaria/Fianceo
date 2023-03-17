@@ -45,7 +45,7 @@ const PricingPlan = () => {
                     return <span key={i}>{name}</span>;
                   })}
                 </div>
-                <div className="flex items-end">
+                <div className="flex items-end ">
                   <PrimaryButton>Get Started Now</PrimaryButton>
                 </div>
               </div>
