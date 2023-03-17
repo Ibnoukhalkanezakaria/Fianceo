@@ -1,3 +1,29 @@
+// NavbarData
+export const NavbarData = {
+  Links: [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "About Us",
+      href: "/aboutUs",
+    },
+    {
+      name: "Integeation",
+      href: "/integeation",
+    },
+    {
+      name: "Pricing",
+      href: "/pricing",
+    },
+    {
+      name: "Blog",
+      href: "/blog",
+    },
+  ],
+};
+
 // TrustedSection
 import trustedImg1 from "../assets/Trusted/companies-trusted-img-1.svg";
 import trustedImg2 from "../assets/Trusted/companies-trusted-img-2.svg";
@@ -35,6 +61,11 @@ import SomeStuffImage2 from "../assets/SomeStuff/img-2.png";
 import SomeStuffImage3 from "../assets/SomeStuff/img-3.png";
 import SomeStuffImage4 from "../assets/SomeStuff/img-4.png";
 import SomeStuffImage5 from "../assets/SomeStuff/img-5.png";
+
+// PricingPlan
+import Profile1 from "../assets/PricingPlan/img1.svg";
+import Profile2 from "../assets/PricingPlan/img2.svg";
+import Profile3 from "../assets/PricingPlan/img3.svg";
 
 export const TrustedData = {
   title: `More than 200+ companies trusted us worldwide`,
@@ -272,6 +303,80 @@ export const GuessedSectionData = {
     {
       name: "January 2019",
       details: "We started our journey",
+    },
+  ],
+};
+
+export const PricingPlanData = {
+  List: [
+    {
+      Avatar: Profile1,
+      Pack: "Individuals",
+      type: "Proffestional",
+      Price: "$24",
+      ListOfOptions: [
+        {
+          name: "Only for 1 person",
+        },
+        {
+          name: "No hidden fees",
+        },
+        {
+          name: "Local fees capped",
+        },
+        {
+          name: "BVN Resolve",
+        },
+        {
+          name: "Perfect for",
+        },
+      ],
+    },
+    {
+      Avatar: Profile2,
+      Pack: "Small Team",
+      type: "Business",
+      Price: "$99",
+      ListOfOptions: [
+        {
+          name: "Only for 100 person",
+        },
+        {
+          name: "No hidden fees",
+        },
+        {
+          name: "Local fees capped",
+        },
+        {
+          name: "BVN Resolve",
+        },
+        {
+          name: "Perfect for",
+        },
+      ],
+    },
+    {
+      Avatar: Profile3,
+      Pack: "Large Team",
+      type: "Enterprise",
+      Price: "$399",
+      ListOfOptions: [
+        {
+          name: "Unlimited access",
+        },
+        {
+          name: "No hidden fees",
+        },
+        {
+          name: "Local fees capped",
+        },
+        {
+          name: "BVN Resolve",
+        },
+        {
+          name: "Perfect for",
+        },
+      ],
     },
   ],
 };

@@ -7,14 +7,16 @@ import SliderCnp from "../Slider/SliderCnp";
 const CustomersSections = () => {
   const { List, title } = CustomersSectionsData;
   return (
-    <div className="pt-[120px] pb-[50px] Wrapper">
-      <h2 className="color5 f2 fw-700 text-center">Love Form Customers</h2>
+    <div className="pt-[120px] pb-[50px] Wrapper bg-color7">
+      <h2 className="color5 md:text-4xl pb-[50px] sm:text-3xl text-2xl fw-700 text-center">
+        Love Form Customers
+      </h2>
       <SliderCnp />
-      {/* <h2 className="color5 f2 fw-700 text-center max-w-[700px] m-auto">
+      <h2 className="color5 md:text-4xl  sm:text-3xl text-2xl fw-700 text-center max-w-[700px] m-auto">
         {title}
       </h2>
-      <div className="py-10 grid md:grid-cols-2 grid-cols-1">
-        <div className="bg-color7 py-10 ">
+      <div className="py-20 bg-color7 grid md:grid-cols-2 grid-cols-1 md:gap-6 ">
+        <div className="bg-color7">
           {List.map((item, i) => {
             return (
               <div
@@ -30,7 +32,7 @@ const CustomersSections = () => {
             );
           }).slice(0, 1)}
         </div>
-        <div className="bg-color7 p-10">
+        <div className="bg-color7 ">
           {List.map((item, i) => {
             return (
               <div
@@ -45,7 +47,7 @@ const CustomersSections = () => {
             );
           }).slice(1)}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -5,63 +5,40 @@ import LogInButton from "../Buttons/LogInButton";
 import SignUpButton from "../Buttons/SignUpButton";
 import { HiBars3 } from "react-icons/hi2";
 
+import { NavbarData } from "../../Data/data";
+
 const Navbar = () => {
+  const { Links } = NavbarData;
   const [open, setOpen] = useState(false);
   return (
-    <div className="md:max-w-[1440px] max-w-[1200px] m-auto sm:px-[2%] px-[3%]">
-      <div className="flex items-center py-8 justify-between">
-        <div className="logo">
-          <Link to="/">
-            <img src={Logo} alt="Logo" aria-label="Logo" />
-          </Link>
-        </div>
-        <div>
-          <ul
-            className={`lg:flex lg:flex-row lg:static lg:bg-color7 bg-[#F9F9F9] w-full  absolute ${
-              open ? "opacity-100 " : "opacity-0 "
-            } top-[25%] pl-8 left-[-1rem] flex-col items-center`}
-            role="list"
-            aria-label="Nav-Links"
-          >
-            <li className="p-4">
-              <Link to="/" className="color5">
-                Home
-              </Link>
-            </li>
-            <li className="p-4">
-              <Link to="/aboutUs" className="color5">
-                About Us
-              </Link>
-            </li>
-            <li className="p-4">
-              <Link to="/integeation" className="color5">
-                Integeation
-              </Link>
-            </li>
-            <li className="p-4">
-              <Link to="/pricing" className="color5">
-                Pricing
-              </Link>
-            </li>
-            <li className="p-4">
-              <Link to="/blog" className="color5">
-                Blog
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="flex items-center ">
-          <div className="gap-4 sm:flex absolute left-[2rem] bottom-[10%] sm:static">
-            {/* <LogInButton>Log in</LogInButton> */}
-            {/* <SignUpButton>Sign Up</SignUpButton> */}
+    <div className="w-full ">
+      <div className="Wrapper relative z-50">
+        <div className="lg:flex  justify-between items-center py-8  w-full">
+          <div className="logo z-50">
+            <Link to="/">
+              <img src={Logo} alt="Logo" aria-label="Logo" />
+            </Link>
           </div>
-          <div
-            onClick={() => setOpen(!open)}
-            className={`ml-6 py-4 px-4 ${
-              open ? "color7 bg-color5 " : "color5 bg-color6 "
-            }`}
-          >
-            <HiBars3 className="f5" />
+          <div>
+            <ul className="flex" role="list" aria-label="Nav-Links">
+              {Links.map((item, i) => {
+                const { name, href } = item;
+                return (
+                  <li key={i} className="lg:p-4 py-4">
+                    <Link to={href} className="color5">
+                      {name}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="gap-6 flex bg-color7 ">
+            <LogInButton>Log in</LogInButton>
+            <SignUpButton>Sign Up</SignUpButton>
+          </div>
+          <div onClick={() => setOpen(!open)}>
+            {/* <HiBars3 className="absolute right-[2rem] top-[2rem] f3" /> */}
           </div>
         </div>
       </div>

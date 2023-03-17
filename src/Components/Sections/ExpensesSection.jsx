@@ -25,9 +25,6 @@ const ExpensesSection = () => {
               <div className="bg-[#023ba5] fw-700 rounded-[50%] h-[100px] flex justify-center items-center color7 md:text-4xl  w-[100px]">
                 1
               </div>
-              {/* bg-[#0D3EA2] color7 md:py-6 py-4 md:px-10 rounded-[50%]
-              md:text-4xl text-3xl fw-700 md:w-[100px] w-[70px] h-[70px] flex
-              justify-center items-center */}
               <div>
                 <h2 className="color7 md:text-2xl  fw-700 pb-2">
                   Automated expenses

@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSections from "../../Components/Sections/HeroSections";
+import HeroHome from "../../Components/Sections/HeroHome";
 import TrustedSection from "../../Components/Sections/TrustedSection";
 import FinanceSection from "../../Components/Sections/FinanceSection";
 import SpendingsSection from "../../Components/Sections/SpendingsSection";
@@ -12,7 +12,7 @@ import DiscoverSections from "../../Components/Sections/DiscoverSections";
 const Home = () => {
   return (
     <div>
-      <HeroSections />
+      <HeroHome />
       <TrustedSection />
       <FinanceSection />
       <SpendingsSection />

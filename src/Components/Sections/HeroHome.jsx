@@ -2,12 +2,12 @@ import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import imageHero from "../../assets/hero-img.svg";
 
-const HeroSections = () => {
+const HeroHome = () => {
   return (
     <div className="Wrapper">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8 p50-section items-center">
         <div>
-          <h1 className="md:text-5xl  sm:text-4xl text-3xl fw-700 ">
+          <h1 className="md:text-5xl text-4xl fw-700 ">
             Discover a better way to manage spendings
           </h1>
           <p className="max-w-[400px]">
@@ -24,4 +24,4 @@ const HeroSections = () => {
   );
 };
 
-export default HeroSections;
+export default HeroHome;

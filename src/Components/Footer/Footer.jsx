@@ -38,22 +38,22 @@ const Footer = () => {
             <h3 className="color5 fw-700 f5 ">Company</h3>
             <ul role="list" aria-label="Nav-Links">
               <li className="pt-4">
-                <Link to="/" className="color5">
+                <Link to="/aboutUs" className="color5">
                   About us
                 </Link>
               </li>
               <li className="pt-4">
-                <Link to="/integeation" className="color5">
+                <Link to="/blog" className="color5">
                   Blogs
                 </Link>
               </li>
               <li className="pt-4">
-                <Link to="/pricing" className="color5">
+                <Link to="/" className="color5">
                   Sign In
                 </Link>
               </li>
               <li className="pt-4">
-                <Link to="/pricing" className="color5">
+                <Link to="/" className="color5">
                   Sign Up
                 </Link>
               </li>
