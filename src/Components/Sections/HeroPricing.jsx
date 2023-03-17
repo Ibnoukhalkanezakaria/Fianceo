@@ -27,7 +27,7 @@ const HeroPricing = () => {
             Simple plans that grow with your business. No contracts. No setup
             fees. Choose the right one
           </p>
-          <span className="bg-color7 inline-block mt-6 py-4 px-8 rounded-[30px] color5">
+          <span className="bg-color7 inline-block mt-6 py-4 px-8 rounded-[30px] cursor-pointer color5">
             Monthly
           </span>
         </div>

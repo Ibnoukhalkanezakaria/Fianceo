@@ -192,6 +192,9 @@ p {
 .bg-shadow {
   box-shadow: 0 0 50px 1px #ebeaea;
 }
+.bg-shadow2 {
+  box-shadow: 0px 15px 50px 0px #f1f1f1;
+}
 
 @media (max-width: 1107px) {
   .order-footer-3 {
@@ -203,8 +206,4 @@ p {
   .flex-one {
     width: 100%;
   }
-}
-
-.trant {
-  transform: translate(-50%, -50%);
 }

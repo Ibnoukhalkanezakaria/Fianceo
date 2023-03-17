@@ -380,3 +380,44 @@ export const PricingPlanData = {
     },
   ],
 };
+
+export const competitionData = {
+  ListOfIntegrated: [
+    {
+      name: "Slack",
+      image: Slack,
+    },
+    {
+      name: "Dropbox",
+      image: Dropbox,
+    },
+    {
+      name: "Intercom",
+      image: Intercom,
+    },
+    {
+      name: "Hubspot",
+      image: Hubspot,
+    },
+  ],
+  Decisions: [
+    {
+      Decision: "Push messages & notifications",
+    },
+    {
+      Decision: "Conversation routing rules",
+    },
+    {
+      Decision: "Revenue and performance reporting",
+    },
+    {
+      Decision: "Reverse IP lookup and data enrichment",
+    },
+    {
+      Decision: "A/B testing & control groups",
+    },
+    {
+      Decision: "Targeted messaging",
+    },
+  ],
+};
