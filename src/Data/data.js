@@ -421,3 +421,33 @@ export const competitionData = {
     },
   ],
 };
+
+export const FrequentlyData = {
+  List: [
+    {
+      title: "Why I choose Fianceo template?",
+      description:
+        "Your need a sales machine not a website that’s where Booster comes in. A clean desinged webflow template. Make your own identity with Booster",
+    },
+    {
+      title: "Do you offer discount for non-profits?",
+      description:
+        "Your need a sales machine not a website that’s where Booster comes in. A clean desinged webflow template. Make your own identity with Booster",
+    },
+    {
+      title: "Which industry are you best for ?",
+      description:
+        "Your need a sales machine not a website that’s where Booster comes in. A clean desinged webflow template. Make your own identity with Booster",
+    },
+    {
+      title: "How our support team works with cilents ?",
+      description:
+        "Your need a sales machine not a website that’s where Booster comes in. A clean desinged webflow template. Make your own identity with Booster",
+    },
+    {
+      title: "Do you offer refaral program ?",
+      description:
+        "Your need a sales machine not a website that’s where Booster comes in. A clean desinged webflow template. Make your own identity with Booster",
+    },
+  ],
+};

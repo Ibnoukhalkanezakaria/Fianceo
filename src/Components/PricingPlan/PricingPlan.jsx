@@ -1,7 +1,6 @@
 import React from "react";
 import { PricingPlanData } from "../../Data/data";
 import PrimaryButton from "../Buttons/PrimaryButton";
-import stick3 from "../../assets/stick-3.svg";
 import { AiOutlineCheck } from "react-icons/ai";
 
 const PricingPlan = () => {
@@ -10,11 +9,6 @@ const PricingPlan = () => {
     <div>
       <div className="Wrapper mt-[-50px]">
         <div className="relative">
-          <img
-            src={stick3}
-            alt="sticky1"
-            className="absolute top-[-60px] left-[40px]"
-          />
           {List.map((item, i) => {
             const { Avatar, Pack, type, Price, ListOfOptions } = item;
             return (

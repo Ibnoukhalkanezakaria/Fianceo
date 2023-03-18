@@ -1,17 +1,17 @@
 import React from "react";
 import { competitionData } from "../../Data/data";
-import Logo from "../../assets/img-logo.svg";
-import { GrClose } from "react-icons/gr";
+import Logo from "../../assets/img-logo2.svg";
+import { AiOutlineClose, AiOutlineCheck } from "react-icons/ai";
 
 const competition = () => {
   const { ListOfIntegrated, Decisions } = competitionData;
   return (
-    <div className="bg-orange-500">
+    <div className="bg-color7 p50-section">
       <div className="Wrapper">
-        <h1 className="fw-700 f2 color5 text-center">
+        <h1 className="fw-700 f2 color5 text-center pb-12">
           We break the competition
         </h1>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
           <div className="">
             <div className="py-8 bg-[#F1F1F1] flex justify-between text-center px-12">
               {ListOfIntegrated.map((item, i) => {
@@ -31,7 +31,7 @@ const competition = () => {
                 const { Decision } = item;
                 return (
                   <p key={i} className="pb-3 color5 flex gap-3 items-center">
-                    <GrClose className="bg-orange-600 color7 rounded-full p-1 text-xl" />
+                    <AiOutlineClose className="color7 text-[20px] bg-orange-600 rounded-full p-1" />
                     {Decision}
                   </p>
                 );
@@ -39,13 +39,21 @@ const competition = () => {
             </div>
           </div>
           <div>
-            <div className="flex gap-4 text-center bg-[var(--primary-clr)]">
-              <img src={Logo} alt="Logo" />
+            <div className="flex gap-4 justify-center p-[3.3rem] bg-[var(--secondary-clr)]">
+              <img src={Logo} alt="Logo" className="" />
             </div>
-            <div className="bg-[var(--secondary-clr)]">
+            <div className="bg-[var(--primary-clr)] py-8">
               {Decisions.map((item, i) => {
                 const { Decision } = item;
-                return <p key={i}>{Decision}</p>;
+                return (
+                  <p
+                    key={i}
+                    className="px-12 color7 pb-3 flex items-center gap-3"
+                  >
+                    <AiOutlineCheck className="bg-color3 color7 rounded-full p-1 text-xl" />
+                    {Decision}
+                  </p>
+                );
               })}
             </div>
           </div>
