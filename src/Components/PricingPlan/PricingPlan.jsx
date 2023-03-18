@@ -14,9 +14,9 @@ const PricingPlan = () => {
             return (
               <div
                 key={i}
-                className="relative z-60 bg-shadow2 p-8 mb-8 one flex justify-between bg-color7 min-h-[240px]  max-w-[1000px] m-auto"
+                className="relative z-60 bg-shadow2 p-8 mb-8 one flex gap-4 flex-row bg-color7 min-h-[240px]  max-w-[1000px] m-auto"
               >
-                <div className="flex flex-col justify-between">
+                <div className="flex flex-col justify-between basis-1/4">
                   <div>
                     <img src={Avatar} alt="" />
                   </div>
@@ -25,7 +25,7 @@ const PricingPlan = () => {
                     <span className="fw-700 f5 pt-2 block">{Pack}</span>
                   </div>
                 </div>
-                <div className="flex flex-col justify-between">
+                <div className="flex flex-col justify-between basis-1/4">
                   <div>
                     <span className="block">Pricing Plan</span>
                     <span className="fw-700 f5 pt-2 block">{type}</span>
@@ -35,7 +35,7 @@ const PricingPlan = () => {
                     /month
                   </div>
                 </div>
-                <div className="flex flex-col justify-between">
+                <div className="flex flex-col justify-between basis-1/4">
                   {ListOfOptions.map((item, i) => {
                     const { name } = item;
                     return (
@@ -46,7 +46,7 @@ const PricingPlan = () => {
                     );
                   })}
                 </div>
-                <div className="flex items-end ">
+                <div className="flex items-end basis-1/4">
                   <PrimaryButton>Get Started Now</PrimaryButton>
                 </div>
               </div>

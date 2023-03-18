@@ -11,7 +11,10 @@ const competition = () => {
         <h1 className="fw-700 f2 color5 text-center pb-12">
           We break the competition
         </h1>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-10 relative">
+          <span className="bg-color7 translate-50 color5 text-xl rounded-full flex justify-center items-center h-[100px] w-[100px] color5 absolute ">
+            VS
+          </span>
           <div className="">
             <div className="py-8 bg-[#F1F1F1] flex justify-between text-center px-12">
               {ListOfIntegrated.map((item, i) => {

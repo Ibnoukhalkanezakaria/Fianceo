@@ -67,6 +67,16 @@ import Profile1 from "../assets/PricingPlan/img1.svg";
 import Profile2 from "../assets/PricingPlan/img2.svg";
 import Profile3 from "../assets/PricingPlan/img3.svg";
 
+// ResourcesSection
+import ResourcesImage1 from "../assets/Resources/image1.png";
+import ResourcesImage2 from "../assets/Resources/image2.png";
+import ResourcesImage3 from "../assets/Resources/image3.png";
+import ResourcesImage4 from "../assets/Resources/image4.png";
+import ResourcesImage5 from "../assets/Resources/image5.png";
+import ResourcesImage6 from "../assets/Resources/image6.png";
+import ResourcesImage7 from "../assets/Resources/image7.png";
+import ResourcesImage8 from "../assets/Resources/image8.png";
+
 export const TrustedData = {
   title: `More than 200+ companies trusted us worldwide`,
   List: [
@@ -448,6 +458,80 @@ export const FrequentlyData = {
       title: "Do you offer refaral program ?",
       description:
         "Your need a sales machine not a website that’s where Booster comes in. A clean desinged webflow template. Make your own identity with Booster",
+    },
+  ],
+};
+
+export const ResourcesSectionData = {
+  title: "Resources for makers & creatives to learn",
+  List: [
+    {
+      id: "1",
+      title: "Get started new job with to grow your business",
+      image: ResourcesImage1,
+      date: "December 6, 2021",
+      description:
+        "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
+    },
+    {
+      id: "2",
+      title: "Keep your self away from social media",
+      image: ResourcesImage2,
+      date: "December 6, 2021",
+      description:
+        "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
+      Recent: true,
+    },
+    {
+      id: "3",
+      title: "Start your new journey with us",
+      image: ResourcesImage3,
+      date: "December 6, 2021",
+      description:
+        "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
+    },
+    {
+      id: "4",
+      title: "Start your new journey with us",
+      image: ResourcesImage4,
+      date: "December 6, 2021",
+      description:
+        "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
+    },
+    {
+      id: "5",
+      title: "Start your new journey with us",
+      image: ResourcesImage5,
+      date: "December 6, 2021",
+      description:
+        "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
+    },
+    {
+      id: "5",
+      title: "Start your new journey with us",
+      image: ResourcesImage6,
+      date: "December 6, 2021",
+      description:
+        "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
+      Recent: true,
+    },
+    {
+      id: "5",
+      title: "Start your new journey with us",
+      image: ResourcesImage7,
+      date: "December 6, 2021",
+      description:
+        "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
+      Recent: true,
+    },
+    {
+      id: "5",
+      title: "Start your new journey with us",
+      image: ResourcesImage8,
+      date: "December 6, 2021",
+      description:
+        "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
+      Recent: true,
     },
   ],
 };
