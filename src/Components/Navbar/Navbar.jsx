@@ -11,9 +11,9 @@ const Navbar = () => {
   const { Links } = NavbarData;
   const [open, setOpen] = useState(false);
   return (
-    <div className="w-full ">
+    <div className=" ">
       <div className="Wrapper relative z-50">
-        <div className="lg:flex  justify-between items-center py-8  w-full">
+        <div className="flex justify-between items-center py-8  ">
           <div className="logo z-50">
             <Link to="/">
               <img src={Logo} alt="Logo" aria-label="Logo" />
