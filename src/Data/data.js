@@ -483,7 +483,7 @@ export const ResourcesSectionData = {
       Recent: true,
     },
     {
-      id: "3",
+      id: "Start-your-new-journey-with-us",
       title: "Start your new journey with us",
       image: ResourcesImage3,
       date: "December 6, 2021",
@@ -491,7 +491,7 @@ export const ResourcesSectionData = {
         "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
     },
     {
-      id: "4",
+      id: "difficult-for-customers-to-customise-it",
       title: "Start your new journey with us",
       image: ResourcesImage4,
       date: "December 6, 2021",
@@ -499,7 +499,7 @@ export const ResourcesSectionData = {
         "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
     },
     {
-      id: "5",
+      id: "makes-it-too-difficult-for-customers",
       title: "Start your new journey with us",
       image: ResourcesImage5,
       date: "December 6, 2021",
@@ -507,7 +507,7 @@ export const ResourcesSectionData = {
         "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
     },
     {
-      id: "6",
+      id: "Making-online-payment-is-now-just-3-sec",
       title: "Start your new journey with us",
       image: ResourcesImage6,
       date: "December 6, 2021",
@@ -516,7 +516,7 @@ export const ResourcesSectionData = {
       Recent: true,
     },
     {
-      id: "7",
+      id: "Blog-Image-We-make-spending-easier-than-ever-before",
       title: "Start your new journey with us",
       image: ResourcesImage7,
       date: "December 6, 2021",
@@ -525,7 +525,7 @@ export const ResourcesSectionData = {
       Recent: true,
     },
     {
-      id: "8",
+      id: "Ultimate-financial-savings-solution-for-startups",
       title: "Start your new journey with us",
       image: ResourcesImage8,
       date: "December 6, 2021",

@@ -17,7 +17,6 @@ const SingleBlog = () => {
         </div>
       </div>
       <img src={image} alt="" className="w-full" />
-
       <div className="p50-section max-w-[100%] w-[800px] m-auto">
         <h1 className="color5 fw-700 f3">
           The remarkable thing about startups is that thecreate.
