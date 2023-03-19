@@ -7,6 +7,7 @@ import Pricing from "./Pages/Pricing/Pricing";
 import Blog from "./Pages/Blog/Blog";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
+import SingleBlog from "./Components/Sections/SingleBlog";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/integeation" element={<Integeation />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/:singleBlog" element={<SingleBlog />} />
       </Routes>
       <Footer />
     </>

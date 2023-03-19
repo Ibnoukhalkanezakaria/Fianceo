@@ -466,7 +466,7 @@ export const ResourcesSectionData = {
   title: "Resources for makers & creatives to learn",
   List: [
     {
-      id: "1",
+      id: "Get-started-new-job-with-to-grow-your-business",
       title: "Get started new job with to grow your business",
       image: ResourcesImage1,
       date: "December 6, 2021",
@@ -474,7 +474,7 @@ export const ResourcesSectionData = {
         "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
     },
     {
-      id: "2",
+      id: "Keep-your-self-away-from-social-media",
       title: "Keep your self away from social media",
       image: ResourcesImage2,
       date: "December 6, 2021",
@@ -507,7 +507,7 @@ export const ResourcesSectionData = {
         "Building complex templates makes it too difficult for customers to customise it, so building ones that are.",
     },
     {
-      id: "5",
+      id: "6",
       title: "Start your new journey with us",
       image: ResourcesImage6,
       date: "December 6, 2021",
@@ -516,7 +516,7 @@ export const ResourcesSectionData = {
       Recent: true,
     },
     {
-      id: "5",
+      id: "7",
       title: "Start your new journey with us",
       image: ResourcesImage7,
       date: "December 6, 2021",
@@ -525,7 +525,7 @@ export const ResourcesSectionData = {
       Recent: true,
     },
     {
-      id: "5",
+      id: "8",
       title: "Start your new journey with us",
       image: ResourcesImage8,
       date: "December 6, 2021",

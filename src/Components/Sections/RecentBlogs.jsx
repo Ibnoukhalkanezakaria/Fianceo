@@ -7,6 +7,7 @@ import stick3 from "../../assets/stick-3.svg";
 import { TfiFacebook, TfiLinkedin } from "react-icons/tfi";
 import { TiSocialTwitter } from "react-icons/ti";
 import { RiInstagramFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const RecentBlogs = () => {
   const { List } = ResourcesSectionData;
@@ -17,25 +18,31 @@ const RecentBlogs = () => {
         <div className="flex flex-row justify-between flex-wrap gap-10">
           <div className="basis-1/2 ">
             {List.map((item, i) => {
-              const { Recent, image, title, description, date } = item;
+              const { Recent, image, title, description, date, id } = item;
               if (Recent === true) {
                 return (
-                  <div
-                    key={i}
-                    className="flex gap-6 py-6 border-b-[2px] border-[#f1f0f0]"
-                  >
-                    <div>
-                      <img src={image} alt="image" className="max-w-[300px]" />
+                  <Link to={`/${id}`}>
+                    <div
+                      key={id}
+                      className="flex gap-6 py-6 border-b-[2px] border-[#f1f0f0]"
+                    >
+                      <div>
+                        <img
+                          src={image}
+                          alt="image"
+                          className="max-w-[300px]"
+                        />
+                      </div>
+                      <div>
+                        <span>FINANCE</span>
+                        <h3 className="color5 fw-700 f5 max-w-[300px] leading-7 pt-4">
+                          {title}
+                        </h3>
+                        <p className="max-w-[500px] py-4">{description} </p>
+                        <span>{date}</span>
+                      </div>
                     </div>
-                    <div>
-                      <span>FINANCE</span>
-                      <h3 className="color5 fw-700 f5 max-w-[300px] leading-7 pt-4">
-                        {title}
-                      </h3>
-                      <p className="max-w-[500px] py-4">{description} </p>
-                      <span>{date}</span>
-                    </div>
-                  </div>
+                  </Link>
                 );
               }
             })}

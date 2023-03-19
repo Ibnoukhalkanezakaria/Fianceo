@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { ResourcesSectionData } from "../../Data/data";
 
@@ -11,17 +12,19 @@ const HeroBlog = () => {
           {title}
         </h1>
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6  p100-section cursor-pointer">
-          {List.map((item, i) => {
-            const { title, image, date } = item;
+          {List.map((item) => {
+            const { title, image, date, id } = item;
             return (
-              <div>
-                <img src={image} alt="" className="rounded-xl" />
-                <span className="block color5 fw-400 py-4 ">FINANCE</span>
-                <h3 className="f4 max-w-[350px] leading-8 color5 fw-700">
-                  {title}
-                </h3>
-                <span className="block py-4 color5 fw-300">{date}</span>
-              </div>
+              <Link to={`/${id}`}>
+                <div key={id}>
+                  <img src={image} alt="" className="rounded-xl" />
+                  <span className="block color5 fw-400 py-4 ">FINANCE</span>
+                  <h3 className="f4 max-w-[350px] leading-8 color5 fw-700">
+                    {title}
+                  </h3>
+                  <span className="block py-4 color5 fw-300">{date}</span>
+                </div>
+              </Link>
             );
           }).slice(0, 3)}
         </div>
