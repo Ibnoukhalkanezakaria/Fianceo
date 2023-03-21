@@ -19,7 +19,7 @@ const Home = () => {
       <CompanySection />
       <ExpensesSection />
       <IntregratedSections />
-      <CustomersSections />
+      {/* <CustomersSections /> */}
       <DiscoverSections />
     </div>
   );

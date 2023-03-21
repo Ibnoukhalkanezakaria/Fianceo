@@ -21,7 +21,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/:singleBlog" element={<SingleBlog />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

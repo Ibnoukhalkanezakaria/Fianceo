@@ -11,7 +11,7 @@ const ExpensesSection = () => {
       <div className="Wrapper">
         <div className="flex gap-6 items-center md:justify-between flex-wrap">
           <div>
-            <h1 className="color7 fw-700 md:text-4xl text-3xl max-w-[700px] m-0 ">
+            <h1 className="color7 fw-700 sm:text-4xl text-3xl max-w-[700px] m-0 ">
               Put expenses on easy mode and save tons of money
             </h1>
           </div>

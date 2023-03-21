@@ -4,16 +4,18 @@ import { TrustedData } from "../../Data/data";
 const TrustedSection = () => {
   const { title, List } = TrustedData;
   return (
-    <div className="Wrapper p100-section">
-      <h2 className="color5 text-center color5 f5"> {title} </h2>
-      <div className="flex gap-10 flex-wrap pt-8 justify-center">
-        {List.map((item, i) => {
-          return (
-            <div key={i}>
-              <img src={item.image} alt="trusted-image" />
-            </div>
-          );
-        })}
+    <div className="bg-color7 p100-section">
+      <div className="Wrapper ">
+        <h2 className="color5 text-center color5 f5"> {title} </h2>
+        <div className="flex gap-10 flex-wrap pt-8 justify-center">
+          {List.map((item, i) => {
+            return (
+              <div key={i}>
+                <img src={item.image} alt="trusted-image" />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

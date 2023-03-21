@@ -175,6 +175,7 @@ p {
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
+
 /* Section */
 
 .p50-section {
@@ -187,6 +188,17 @@ p {
   padding-block: 120px;
 }
 
+@media (max-width: 568px) {
+  .p50-section {
+    padding-block: 25px;
+  }
+  .p100-section {
+    padding-block: 50px;
+  }
+  .p120-section {
+    padding-block: 60px;
+  }
+}
 /* Shadow */
 
 .bg-shadow {

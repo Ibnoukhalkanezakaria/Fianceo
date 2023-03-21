@@ -22,7 +22,7 @@ const DiscoverSections = () => {
             alt=""
             className="absolute left-[10%] bottom-[10%]"
           />
-          <h1 className="md:text-5xl px-4 sm:text-4xl text-3xl color7 fw-700 md:max-w-[900px]   m-auto pb-10">
+          <h1 className="sm:text-5xl px-4 text-4xl color7 fw-700 md:max-w-[900px]   m-auto pb-10">
             Discover a better way to manage spendings
           </h1>
           <div className="z-30 relative">
