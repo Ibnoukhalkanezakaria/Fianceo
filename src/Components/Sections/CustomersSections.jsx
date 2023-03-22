@@ -13,7 +13,7 @@ const CustomersSections = () => {
           Love Form Customers
         </h2>
         <SliderCnp />
-        <h2 className="color5 sm:text-4xl text-3xl sm:text-center fw-700 text-left max-w-[700px] m-auto">
+        <h2 className="pt-[50px] color5 sm:text-4xl text-3xl sm:text-center fw-700 text-left max-w-[700px] m-auto">
           {title}
         </h2>
         <div className="py-20 grid md:grid-cols-2 grid-cols-1 md:gap-6 ">

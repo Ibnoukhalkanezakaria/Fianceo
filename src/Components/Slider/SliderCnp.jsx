@@ -25,8 +25,8 @@ import stick5 from "../../assets/stick-5.svg";
 const SliderCnp = () => {
   const { List } = SliderCnpData;
   return (
-    <div>
-      <div className="p100-section">
+    <div className="">
+      <div className="p100-section ">
         <div className="relative">
           <div>
             <div>
@@ -39,7 +39,7 @@ const SliderCnp = () => {
               >
                 {List.map((item, i) => {
                   return (
-                    <SwiperSlide key={i} className="bg-white lg:p-[50px]">
+                    <SwiperSlide key={i} className=" lg:p-[50px]">
                       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
                         <div>
                           <div className="relative">
