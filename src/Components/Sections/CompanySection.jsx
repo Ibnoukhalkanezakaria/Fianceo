@@ -3,7 +3,7 @@ import CompanyImage from "../../assets/Company/Company-Image.svg";
 
 const CompanySection = () => {
   return (
-    <div className="p100-section bg-color7">
+    <div className="p120-section bg-color7">
       <div className="Wrapper ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
           <div>
