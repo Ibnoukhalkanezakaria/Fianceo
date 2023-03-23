@@ -5,7 +5,7 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import Integeation from "./Pages/Integeation/Integeation";
 import Pricing from "./Pages/Pricing/Pricing";
 import Blog from "./Pages/Blog/Blog";
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar/Nav";
 import Footer from "./Components/Footer/Footer";
 import SingleBlog from "./Components/Sections/SingleBlog";
 

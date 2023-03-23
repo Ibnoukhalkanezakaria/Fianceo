@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FrequentlyData } from "../../Data/data";
 import { AiOutlinePlus } from "react-icons/ai";
 const Frequently = () => {
-  const { down, setDown } = useState(false);
+  const [open, setOpen] = useState(false);
   const { List } = FrequentlyData;
   return (
     <div className="bg-color7 p50-section">
@@ -21,18 +21,27 @@ const Frequently = () => {
                   className="items-center  border-b-[1px] border-[#E5E5E5]  p-6 cursor-pointer"
                   key={i}
                 >
-                  <div className="flex justify-between item-center ">
+                  <div
+                    onClick={() => setOpen(!open)}
+                    className="flex justify-between item-center duration-500"
+                  >
                     <div className="flex items-center color5 fw-600 text-lg">
                       {title}
                     </div>
-                    <div onClick={() => setDown(!down)}>
+                    <div>
                       <AiOutlinePlus
-                        className={`text-lg ${down ? "rotate-45" : "rotate-0"}`}
+                        className={`text-lg ${open ? "rotate-45" : "rotate-0"}`}
                       />
                     </div>
                   </div>
                   <div>
-                    {/* <p className="max-w-[500px] pt-4 fw-400">{description}</p> */}
+                    <p
+                      className={`max-w-[500px] pt-4 fw-400 ${
+                        open ? "hidden" : "block"
+                      } duration-500 `}
+                    >
+                      {description}
+                    </p>
                   </div>
                 </div>
               );
