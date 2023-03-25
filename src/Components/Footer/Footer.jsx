@@ -7,6 +7,8 @@ import { RiInstagramFill } from "react-icons/ri";
 import { SlEnvolopeLetter } from "react-icons/sl";
 
 const Footer = () => {
+  const date = new Date();
+  const today = date.getFullYear();
   return (
     <div className="bg-color7">
       <div className="Wrapper pt-8">
@@ -90,7 +92,7 @@ const Footer = () => {
         <div className="flex flex-row flex-wrap gap-6 justify-between py-8">
           <div>
             <p className="fw-400 ">
-              © Ibnoukhalkane 2023 Fianceo. Design by Webflow, checkout the
+              © Ibnoukhalkane {today} Fianceo. Design by Webflow, checkout the
               repository
               <a
                 target="_blank"
