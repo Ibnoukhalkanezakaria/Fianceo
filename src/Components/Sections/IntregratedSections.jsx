@@ -18,7 +18,6 @@ const IntregratedSections = () => {
         </h1>
         <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 pt-16">
           {List.map((item, i) => {
-            console.log(`${i + 4}00`);
             return (
               <div
                 data-aos="fade-up"

@@ -227,3 +227,11 @@ p {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Order */
+
+@media (max-width: 768px) {
+  .order-one {
+    order: 1;
+  }
+}

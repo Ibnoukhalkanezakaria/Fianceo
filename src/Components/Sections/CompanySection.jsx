@@ -6,7 +6,7 @@ const CompanySection = () => {
     <div className="p120-section bg-color7">
       <div className="Wrapper ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
-          <div>
+          <div className="order-one">
             <h1
               data-aos="fade-up"
               data-aos-delay="500"
