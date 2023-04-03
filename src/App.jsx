@@ -8,6 +8,9 @@ import Blog from "./Pages/Blog/Blog";
 import Navbar from "./Components/Navbar/Nav";
 import Footer from "./Components/Footer/Footer";
 import SingleBlog from "./Components/Sections/SingleBlog";
+import Error from "./Pages/Error/Error";
+import SignIn from "./Pages/Login/SignIn";
+import SignUp from "./Pages/Login/SignUp";
 
 function App() {
   return (
@@ -19,9 +22,12 @@ function App() {
         <Route path="/integeation" element={<Integeation />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/:singleBlog" element={<SingleBlog />} />
+        <Route path="/signIn" element={<SignIn />} />
+        <Route path="/signUp" element={<SignUp />} />
+        <Route path="/blog/:singleBlog" element={<SingleBlog />} />
+        {/* <Route path="*" element={<Error />} /> */}
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

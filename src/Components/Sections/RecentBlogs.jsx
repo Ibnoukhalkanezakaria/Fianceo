@@ -21,7 +21,7 @@ const RecentBlogs = () => {
               const { Recent, image, title, description, date, id } = item;
               if (Recent === true) {
                 return (
-                  <Link to={`/${id}`}>
+                  <Link to={`/blog/${id}`}>
                     <div
                       key={id}
                       className="flex gap-6 py-6 border-b-[2px] border-[#f1f0f0]"

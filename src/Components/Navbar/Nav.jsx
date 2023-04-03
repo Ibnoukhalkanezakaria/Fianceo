@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Nav.css";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/img-logo.svg";
 import { NavbarData } from "../../Data/data";
@@ -11,43 +10,70 @@ const Nav = () => {
   const { Links } = NavbarData;
   const [open, setOpen] = useState(false);
   return (
-    <header className="bg-white">
-      <nav className="Wrapper flex relative z-10 p-4 justify-between items-center ">
-        <div className="bg-color7">
-          <img src={Logo} alt="Logo" aria-label="" />
-        </div>
-        <div
-          className={`z-[-1] absolute duration-500 md:static md:h-auto md:w-auto md:bg-transparent bg-color7 h-screen left-0 ${
-            open ? "top-[100px]" : "top-[-450px]"
-          } w-full flex items-center px-5 y-2`}
-        >
-          <ul className="flex md:flex-row flex-col md:items-center">
-            {Links.map((item, i) => {
-              const { name, href } = item;
-              return (
-                <li key={i}>
-                  <Link to={href} className="color5 p-4">
-                    {name}
+    <nav className="relative z-[999] ">
+      <div className="py-8 bg-color7">
+        <div className="Wrapper">
+          <div className="flex items-center justify-between gap-2">
+            <div className="logo">
+              <Link to="/">
+                <img src={Logo} alt="" />
+              </Link>
+            </div>
+            <div
+              className={`z-[-1] lg:z-0 py-8  bg-[#F9F9F9] lg:px-0 px-[1rem] lg:py-0 flex gap-4 flex-col lg:flex-row bg-colo7 absolute ${
+                open ? "top-[-400px]" : "top-[118px]"
+              } duration-500 left-0 lg:static w-full lg:w-auto`}
+            >
+              <div>
+                <ul className={`flex lg:flex-row flex-col`}>
+                  {Links.map((item, i) => {
+                    const { name, href } = item;
+                    return (
+                      <li key={i} className="py-2">
+                        <Link to={href} className="color5 p-4">
+                          {name}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+              <div className="flex lg:hidden gap-4 px-4 flex-wrap">
+                <div className="block md:hidden">
+                  <Link to="/signIn">
+                    <LogInButton>Log in</LogInButton>
                   </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <div className="flex items-center gap-4 bg-color7">
-          <div className="hidden sm:flex gap-4">
-            <LogInButton>Log in</LogInButton>
-            <SignUpButton>Sign Up</SignUpButton>
+                </div>
+                <div className="block md:hidden">
+                  <Link to="/signUp">
+                    <SignUpButton>Sign Up</SignUpButton>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-4 items-center">
+              <div className="md:block hidden">
+                <Link to="/signIn">
+                  <LogInButton>Log in</LogInButton>
+                </Link>
+              </div>
+              <div className="md:block hidden">
+                <Link to="/signUp">
+                  <SignUpButton>Sign Up</SignUpButton>
+                </Link>
+              </div>
+              <div
+                className={`p-4 block lg:hidden duration-500 ${
+                  open ? "bg-color5 color7" : "bg-color6"
+                }`}
+              >
+                <HiBars3 onClick={() => setOpen(!open)} className="text-xl" />
+              </div>
+            </div>
           </div>
-          <div>
-            <HiBars3
-              onClick={() => setOpen(!open)}
-              className="text-3xl cursor-pointers md:hidden"
-            />
-          </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 };
 

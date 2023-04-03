@@ -12,15 +12,15 @@ import DiscoverSections from "../../Components/Sections/DiscoverSections";
 const Home = () => {
   return (
     <div>
-      <HeroHome />
-      <TrustedSection />
+      {/* <HeroHome /> */}
+      {/* <TrustedSection />
       <FinanceSection />
       <SpendingsSection />
       <CompanySection />
       <ExpensesSection />
       <IntregratedSections />
       <CustomersSections />
-      <DiscoverSections />
+      <DiscoverSections /> */}
     </div>
   );
 };
