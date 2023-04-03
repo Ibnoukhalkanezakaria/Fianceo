@@ -20,8 +20,8 @@ const Nav = () => {
               </Link>
             </div>
             <div
-              className={`z-[-1] lg:z-0 py-8  bg-[#F9F9F9] lg:px-0 px-[1rem] lg:py-0 flex gap-4 flex-col lg:flex-row bg-colo7 absolute ${
-                open ? "top-[-400px]" : "top-[118px]"
+              className={`z-[-1] lg:z-0 py-8 lg:bg-transparent  bg-[#F9F9F9] lg:px-0 px-[1rem] lg:py-0 flex gap-4 flex-col lg:flex-row bg-colo7 absolute ${
+                open ? "top-[118px]" : "top-[-400px]"
               } duration-500 left-0 lg:static w-full lg:w-auto`}
             >
               <div>
@@ -64,7 +64,7 @@ const Nav = () => {
               </div>
               <div
                 className={`p-4 block lg:hidden duration-500 ${
-                  open ? "bg-color5 color7" : "bg-color6"
+                  open ? "bg-color6" : "bg-color5 color7"
                 }`}
               >
                 <HiBars3 onClick={() => setOpen(!open)} className="text-xl" />
