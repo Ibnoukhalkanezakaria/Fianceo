@@ -14,13 +14,13 @@ const Home = () => {
     <div>
       <HeroHome />
       <TrustedSection />
-      {/* <FinanceSection /> */}
-      {/* <SpendingsSection /> */}
-      {/* <CompanySection /> */}
-      {/* <ExpensesSection /> */}
-      {/* <IntregratedSections /> */}
-      {/* <CustomersSections /> */}
-      {/* <DiscoverSections /> */}
+      <FinanceSection />
+      <SpendingsSection />
+      <CompanySection />
+      <ExpensesSection />
+      <IntregratedSections />
+      <CustomersSections />
+      <DiscoverSections />
     </div>
   );
 };

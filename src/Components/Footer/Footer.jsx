@@ -12,10 +12,20 @@ const Footer = () => {
   return (
     <div className="bg-color7">
       <div className="Wrapper pt-8">
-        <div className="logo">
+        <div
+          className="logo"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-duration="600"
+        >
           <img src={Logo} alt="Logo" aria-label="Logo" />
         </div>
-        <div className="flex flex-wrap md:flex-row gap-8 justify-start py-12 ">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="600"
+          className="flex flex-wrap md:flex-row gap-8 justify-start py-12 "
+        >
           <div className="basis-1/4 order-footer-3 ">
             <h3 className="color5 fw-700 f5">Product</h3>
             <ul role="list" aria-label="Nav-Links">

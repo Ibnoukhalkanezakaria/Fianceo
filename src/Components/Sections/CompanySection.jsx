@@ -7,20 +7,39 @@ const CompanySection = () => {
       <div className="Wrapper ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
           <div>
-            <h1 className="color5 sm:text-4xl text-3xl fw-700">
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="600"
+              className="color5 sm:text-4xl text-3xl fw-700"
+            >
               See where the company money goes in real-time
             </h1>
-            <p className="py-2 max-w-[500px]">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="600"
+              className="py-2 max-w-[500px]"
+            >
               Leverage agile frameworks to provide a robust synopsis for high
               level overviews. Iterative approaches to corporate strategy foster
               collaborative thinking to further
             </p>
-            <p className="py-2 max-w-[500px]">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="600"
+              className="py-2 max-w-[500px]"
+            >
               the overall value proposition. Organically grow the holistic world
               view of disruptive innovation
             </p>
           </div>
-          <div>
+          <div
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-duration="500"
+          >
             <img src={CompanyImage} alt="Image" />
           </div>
         </div>

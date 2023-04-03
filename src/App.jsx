@@ -35,7 +35,7 @@ function App() {
         <Route path="/blog/:singleBlog" element={<SingleBlog />} />
         {/* <Route path="*" element={<Error />} /> */}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

@@ -34,7 +34,6 @@ const SliderCnp = () => {
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
                 slidesPerView={1}
-                navigation={{ clickable: true }}
                 className="slider-swiper"
               >
                 {List.map((item, i) => {
@@ -43,7 +42,12 @@ const SliderCnp = () => {
                       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
                         <div>
                           <div className="relative">
-                            <div className="relative">
+                            <div
+                              className="relative "
+                              data-aos="fade-right"
+                              data-aos-delay="400"
+                              data-aos-duration="600"
+                            >
                               <img src={item.profile} alt="" />
                             </div>
                             <img
@@ -64,7 +68,12 @@ const SliderCnp = () => {
                           </div>
                         </div>
                         <div>
-                          <div className="flex gap-2">
+                          <div
+                            className="flex gap-2"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                            data-aos-duration="600"
+                          >
                             <img src={FramerStar} alt="" />
                             <img src={FramerStar} alt="" />
                             <img src={FramerStar} alt="" />
@@ -72,10 +81,20 @@ const SliderCnp = () => {
                             <img src={FramerStar} alt="" />
                           </div>
                           <div className="pt-6 color5">
-                            <q className="color5 sm:text-3xl text-2xl fw-700 block max-w-[600px]">
+                            <q
+                              data-aos="fade-up"
+                              data-aos-delay="400"
+                              data-aos-duration="600"
+                              className="color5 sm:text-3xl text-2xl fw-700 block max-w-[600px]"
+                            >
                               {item.description}
                             </q>
-                            <div className="flex justify-between items-center max-w-[400px] pt-10 color5 ">
+                            <div
+                              data-aos="fade-up"
+                              data-aos-delay="500"
+                              data-aos-duration="600"
+                              className="flex justify-between items-center max-w-[400px] pt-10 color5 "
+                            >
                               <div>
                                 <span className="color5 fw-700 f5 ">
                                   {item.name}

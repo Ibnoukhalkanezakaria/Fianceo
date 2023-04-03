@@ -11,23 +11,30 @@ const ExpensesSection = () => {
       <div className="Wrapper">
         <div className="flex gap-6 items-center md:justify-between flex-wrap">
           <div>
-            <h1 className="color7 fw-700 sm:text-4xl text-3xl max-w-[700px] m-0 ">
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="600"
+              className="color7 fw-700 sm:text-4xl text-3xl max-w-[700px] m-0 "
+            >
               Put expenses on easy mode and save tons of money
             </h1>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
             <PrimaryButton>Get Started</PrimaryButton>
           </div>
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-14 p100-section justify-center">
           <div className="gap-8 flex flex-col md:order-0 order-1">
-            <div className="flex gap-8 items-center">
-              <div className="bg-[#023ba5] fw-700 rounded-[50%] h-[100px] flex justify-center items-center color7 md:text-4xl  w-[100px]">
-                1
-              </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="600"
+              className="flex gap-8 items-center"
+            >
               <div>
                 <h2 className="color7 md:text-2xl  fw-700 pb-2">
-                  Automated expenses
+                  1 - Automated expenses
                 </h2>
                 <p className="text-[#F5F7FA] f7 max-w-[400px]">
                   Leverage agile frameworks to provide a robust synopsis for
@@ -35,13 +42,15 @@ const ExpensesSection = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-8 items-center">
-              <div className="bg-[#023ba5] fw-700 rounded-[50%] h-[100px] flex justify-center items-center color7 md:text-4xl  w-[100px]">
-                2
-              </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="600"
+              className="flex gap-8 items-center"
+            >
               <div>
                 <h2 className="color7 md:text-2xl text-1xl fw-700 pb-2">
-                  Spending overview
+                  2 - Spending overview
                 </h2>
                 <p className="text-[#F5F7FA] f7 max-w-[400px]">
                   Bring to the table win-win survival strategies to ensure
@@ -49,13 +58,15 @@ const ExpensesSection = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-8 items-center">
-              <div className="bg-[#023ba5] fw-700 rounded-[50%] h-[100px] flex justify-center items-center color7 md:text-4xl w-[100px]">
-                3
-              </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="600"
+              className="flex gap-8 items-center"
+            >
               <div>
                 <h2 className="color7 md:text-2xl text-1xl fw-700 pb-2">
-                  Track and pay
+                  3 - Track and pay
                 </h2>
                 <p className="text-[#F5F7FA] f7 max-w-[400px]">
                   Capitalize on low hanging fruit to identify a ballpark value
@@ -63,7 +74,12 @@ const ExpensesSection = () => {
               </div>
             </div>
           </div>
-          <div className=" z-50 md:order-1 order-0">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="600"
+            className=" z-50 md:order-1 order-0"
+          >
             <div className="relative">
               <img src={image} alt="image" className="" />
               <img
