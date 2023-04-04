@@ -54,7 +54,7 @@ const HeroPricing = () => {
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="500"
-            className="bg-color7 justify-start flex max-w-max mt-6 py-4 px-8 rounded-[30px] cursor-pointer color5"
+            className="bg-color7 sm:justify-center sm:m-auto justify-start flex max-w-max mt-6 py-4 px-8 rounded-[30px] cursor-pointer color5"
           >
             Monthly
           </span>

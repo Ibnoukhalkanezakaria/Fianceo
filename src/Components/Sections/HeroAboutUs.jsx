@@ -19,7 +19,7 @@ const HeroAboutUs = () => {
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="500"
-            className="color5 fw-700 md:text-5xl sm:text-4xl text-3xl text-center max-w-[900px] m-auto"
+            className="color5 fw-700 md:text-5xl sm:text-4xl text-3xl sm:text-center max-w-[900px] m-auto"
           >
             We build finance software to empower businesses
           </h1>
@@ -28,7 +28,7 @@ const HeroAboutUs = () => {
               data-aos="fade-up"
               data-aos-delay="400"
               data-aos-duration="500"
-              className="mt-10 m-auto f7"
+              className="mt-10 sm:m-auto f7"
             >
               See Our Milestones
             </PrimaryButton>
