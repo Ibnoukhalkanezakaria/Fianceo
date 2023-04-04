@@ -11,7 +11,7 @@ import DiscoverSections from "../../Components/Sections/DiscoverSections";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <HeroHome />
       <TrustedSection />
       <FinanceSection />

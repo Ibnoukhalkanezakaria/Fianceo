@@ -4,7 +4,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 
 const SpendingsSection = () => {
   return (
-    <div className="bg-color7 p120-section">
+    <div className="bg-color7 p120-section ">
       <div className="Wrapper">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-20 items-center">
           <div

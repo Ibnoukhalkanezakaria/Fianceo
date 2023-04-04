@@ -1,6 +1,7 @@
 import React from "react";
 import { SomeStuffData } from "../../Data/data";
 import PrimaryButton from "../Buttons/PrimaryButton";
+import { Link } from "react-router-dom";
 
 const SomeStuff = () => {
   const { List, title } = SomeStuffData;
@@ -18,7 +19,15 @@ const SomeStuff = () => {
             >
               {title}
             </h1>
-            <PrimaryButton>Gets Started Now</PrimaryButton>
+            <Link to="/signIn">
+              <PrimaryButton
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-duration="500"
+              >
+                Gets Started Now
+              </PrimaryButton>
+            </Link>
           </div>
           {List.map((item, i) => {
             const { name, description, image } = item;

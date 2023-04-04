@@ -4,6 +4,7 @@ import image from "../../assets/Expenses/expenses-img.png";
 import stick1 from "../../assets/stick-1.svg";
 import stick3 from "../../assets/stick-3.svg";
 import stick4 from "../../assets/stick-4.svg";
+import { Link } from "react-router-dom";
 
 const ExpensesSection = () => {
   return (
@@ -21,7 +22,9 @@ const ExpensesSection = () => {
             </h1>
           </div>
           <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
-            <PrimaryButton>Get Started</PrimaryButton>
+            <Link to="/signIn">
+              <PrimaryButton>Get Started</PrimaryButton>
+            </Link>
           </div>
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-14 p100-section justify-center">

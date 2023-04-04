@@ -4,6 +4,7 @@ import stick1 from "../../assets/stick-1.svg";
 import stick2 from "../../assets/stick-2.svg";
 import stick3 from "../../assets/stick-3.svg";
 import stick4 from "../../assets/stick-4.svg";
+import { Link } from "react-router-dom";
 
 const DiscoverSections = () => {
   return (
@@ -46,7 +47,9 @@ const DiscoverSections = () => {
             data-aos-duration="500"
             className="z-30 relative"
           >
-            <PrimaryButton className="m-auto ">Get Started Now</PrimaryButton>
+            <Link to="/signIn">
+              <PrimaryButton className="m-auto ">Get Started Now</PrimaryButton>
+            </Link>
           </div>
         </div>
       </div>

@@ -83,7 +83,7 @@ const Footer = () => {
             </h3>
             <div>
               {submit ? (
-                <div className="bg-[#DDDDDD] mt-8 p-4">
+                <div className="bg-[#DDDDDD]  p-4">
                   <p className="w-full text-center text-[#333333] text-sm t-8 fw-400">
                     Thank you! Your submission has been received!
                   </p>
