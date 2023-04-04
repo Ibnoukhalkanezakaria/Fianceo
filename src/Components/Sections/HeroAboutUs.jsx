@@ -9,6 +9,7 @@ import sticky2 from "../../assets/HeroAboutUs/stick-2.svg";
 import sticky4 from "../../assets/HeroAboutUs/stick-4.svg";
 import teamImage from "../../assets/HeroAboutUs/team-image.png";
 import DifferentlySection from "./DifferentlySection";
+import { Link } from "react-router-dom";
 
 const HeroAboutUs = () => {
   return (
@@ -23,16 +24,18 @@ const HeroAboutUs = () => {
           >
             We build finance software to empower businesses
           </h1>
-          <a href="">
-            <PrimaryButton
-              data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-duration="500"
-              className="mt-10 sm:m-auto f7"
-            >
-              See Our Milestones
-            </PrimaryButton>
-          </a>
+          <div className="mt-6 ">
+            <Link to="/">
+              <PrimaryButton
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-duration="500"
+                className="sm:m-auto f7"
+              >
+                See Our Milestones
+              </PrimaryButton>
+            </Link>
+          </div>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 p50-section justify-center w-[90%] gap-8 m-auto">
           <div

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useHistory } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/img-logo.svg";
 import { NavbarData } from "../../Data/data";

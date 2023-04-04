@@ -12,11 +12,11 @@ import { Link } from "react-router-dom";
 const RecentBlogs = () => {
   const { List } = ResourcesSectionData;
 
-  const [submit, setSubmit] = useState(false);
+  const [submit, setSubmited] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setSubmit(true);
+    setSubmited(true);
   };
 
   return (
@@ -74,9 +74,18 @@ const RecentBlogs = () => {
               <h3 className="relative z-50 color7 fw-700 f2 leading-16 max-w-[360px]">
                 Subscribe to our weekly Newsletter
               </h3>
-              <form className="pt-8 w-full" onSubmit={() => handleSubmit()}>
+              <div className="w-full">
                 {submit ? (
-                  <div>
+                  <div className="bg-[#DDDDDD] mt-8 p-4">
+                    <p className="w-full text-[#333333] text-sm t-8 fw-400">
+                      Thank you! Your submission has been received!
+                    </p>
+                  </div>
+                ) : (
+                  <form
+                    onSubmit={handleSubmit}
+                    className="w-full justify-center pt-8"
+                  >
                     <div className="rounded-md flex bg-[var(--secondary-clr)] p-5 gap-3 my-3">
                       <SlEnvolopeLetter className="color7" />
                       <input
@@ -91,15 +100,9 @@ const RecentBlogs = () => {
                       value="Subscribe Now "
                       className="rounded-md w-full f7 bg-color3 color7 py-5 px-4 text-center cursor-pointer hover:opacity-80"
                     />
-                  </div>
-                ) : (
-                  <div className="bg-[#DDDDDD] p-4">
-                    <p className="w-full text-[#333333] text-sm fw-400">
-                      Thank you! Your submission has been received!
-                    </p>
-                  </div>
+                  </form>
                 )}
-              </form>
+              </div>
             </div>
             <div className="pt-6">
               <h3 className="color5 fw-500 f6">Follow us on:</h3>

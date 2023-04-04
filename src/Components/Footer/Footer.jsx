@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/img-logo.svg";
 import { TfiFacebook, TfiLinkedin } from "react-icons/tfi";
@@ -9,6 +9,12 @@ import { SlEnvolopeLetter } from "react-icons/sl";
 const Footer = () => {
   const date = new Date();
   const today = date.getFullYear();
+  const [submit, setSubmited] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setSubmited(true);
+  };
   return (
     <div className="bg-color7">
       <div className="Wrapper pt-8">
@@ -75,19 +81,29 @@ const Footer = () => {
             <h3 className="color5 fw-700 sm:text-xl text-md pb-4 flex gap-2 ">
               <SlEnvolopeLetter /> Join our newsletter
             </h3>
-            <form className="flex flex-wrap gap-2">
-              <input
-                className="p-4 sm:w-[300px] w-full focus:outline-none "
-                type="email"
-                placeholder="example@gmail.com"
-                required
-              />
-              <input
-                type="submit"
-                value="Subscribe Now"
-                className="sm:w-[150px] w-full f8 bg-color3 color7 py-5 px-4 text-center cursor-pointer hover:opacity-80"
-              />
-            </form>
+            <div>
+              {submit ? (
+                <div className="bg-[#DDDDDD] mt-8 p-4">
+                  <p className="w-full text-center text-[#333333] text-sm t-8 fw-400">
+                    Thank you! Your submission has been received!
+                  </p>
+                </div>
+              ) : (
+                <form className="flex flex-wrap gap-2" onSubmit={handleSubmit}>
+                  <input
+                    className="p-4 sm:w-[300px] w-full focus:outline-none "
+                    type="email"
+                    placeholder="example@gmail.com"
+                    required
+                  />
+                  <input
+                    type="submit"
+                    value="Subscribe Now"
+                    className="sm:w-[150px] w-full f8 bg-color3 color7 py-5 px-4 text-center cursor-pointer hover:opacity-80"
+                  />
+                </form>
+              )}
+            </div>
             <ul className="list-disc pl-5">
               <li className="max-w-[500px] leading-[25px] ">
                 <span className="text-[#00000080] pt-4  block max-w-[400px]">
