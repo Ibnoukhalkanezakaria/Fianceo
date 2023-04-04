@@ -18,7 +18,7 @@ import "aos/dist/aos.css";
 
 function App() {
   Aos.init({
-    offset: 0,
+    offset: 1,
   });
 
   return (

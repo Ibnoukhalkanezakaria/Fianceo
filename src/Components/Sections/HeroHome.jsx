@@ -4,8 +4,8 @@ import imageHero from "../../assets/hero-img.svg";
 
 const HeroHome = () => {
   return (
-    <div className="bg-color7 p50-section">
-      <div className="Wrapper">
+    <div className="bg-color7 p50-section overflow-hidden">
+      <div className="Wrapper ">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8 p50-section items-center">
           <div>
             <h1

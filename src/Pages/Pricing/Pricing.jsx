@@ -7,7 +7,7 @@ import DiscoverSections from "../../Components/Sections/DiscoverSections";
 
 const Pricing = () => {
   return (
-    <div>
+    <div className="min-w-[100%]">
       <HeroPricing />
       <TrustedSection />
       <Competition />

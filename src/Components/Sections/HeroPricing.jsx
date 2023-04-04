@@ -45,7 +45,7 @@ const HeroPricing = () => {
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="500"
-            className="color7 max-w-[500px] m-auto pt-6 f7 md:text-center text-left"
+            className="relative z-40 color7 max-w-[500px] m-auto pt-6 f7 md:text-center text-left"
           >
             Simple plans that grow with your business. No contracts. No setup
             fees. Choose the right one

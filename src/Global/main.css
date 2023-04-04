@@ -48,6 +48,7 @@ body {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  background-color: red;
 }
 a {
   text-decoration: none;
@@ -197,11 +198,14 @@ p {
 @media (max-width: 568px) {
   .p50-section {
     padding-block: 25px;
+    overflow-x: hidden;
   }
   .p100-section {
     padding-block: 50px;
+    overflow-x: hidden;
   }
   .p120-section {
+    overflow-x: hidden;
     padding-block: 60px;
   }
 }
@@ -211,7 +215,6 @@ p {
   box-shadow: 0 0 50px 1px #ebeaea;
 }
 .bg-shadow2 {
-  /* box-shadow: 0px 15px 5px 0px #ebebeb; */
   box-shadow: 0px 15px 1px 0px #f5f5f5;
 }
 

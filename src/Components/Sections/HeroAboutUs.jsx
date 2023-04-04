@@ -14,7 +14,7 @@ const HeroAboutUs = () => {
   return (
     <div>
       <div className="Wrapper">
-        <div className="p100-section">
+        <div className="p100-section ">
           <h1
             data-aos="fade-up"
             data-aos-delay="300"
