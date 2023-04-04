@@ -18,10 +18,6 @@ import { Pagination, Navigation, Scrollbar, A11y } from "swiper";
 import FramerStar from "../../assets/Frame-star.svg";
 import icon from "../../assets/icon-in-slider.svg";
 
-import stick3 from "../../assets/stick-3.svg";
-import stick4 from "../../assets/stick-4.svg";
-import stick5 from "../../assets/stick-5.svg";
-
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 const SliderCnp = () => {
@@ -38,7 +34,7 @@ const SliderCnp = () => {
 
   return (
     <div>
-      <div className="p50-section ">
+      <div className="p100-section ">
         <div className="relative ">
           <div>
             <div>
