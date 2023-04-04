@@ -2,6 +2,7 @@ import React from "react";
 import { PricingPlanData } from "../../Data/data";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import { AiOutlineCheck } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const PricingPlan = () => {
   const { List } = PricingPlanData;
@@ -50,7 +51,9 @@ const PricingPlan = () => {
                   })}
                 </div>
                 <div className="flex items-end ">
-                  <PrimaryButton>Get Started Now</PrimaryButton>
+                  <Link to="/signIn">
+                    <PrimaryButton>Get Started Now</PrimaryButton>
+                  </Link>
                 </div>
               </div>
             );

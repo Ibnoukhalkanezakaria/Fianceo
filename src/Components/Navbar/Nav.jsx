@@ -63,11 +63,12 @@ const Nav = () => {
                 </Link>
               </div>
               <div
+                onClick={() => setOpen(!open)}
                 className={`cursor-pointer p-4 block lg:hidden duration-500 ${
                   open ? "bg-color6" : "bg-color5 color7"
                 }`}
               >
-                <HiBars3 onClick={() => setOpen(!open)} className="text-xl" />
+                <HiBars3 className="text-xl" />
               </div>
             </div>
           </div>

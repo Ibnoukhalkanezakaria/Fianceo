@@ -236,14 +236,3 @@ p {
     order: 1;
   }
 }
-
-/* .paragraph {
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.5s all cubic-bezier(0, 1, 0, 1);
-}
-.paragraph.show {
-  height: auto;
-  max-height: 9999px;
-  transition: 0.5s all cubic-bezier(1, 0, 1, 0);
-} */
