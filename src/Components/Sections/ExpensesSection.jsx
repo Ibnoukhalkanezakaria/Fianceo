@@ -33,7 +33,7 @@ const ExpensesSection = () => {
               className="flex gap-8 items-center"
             >
               <div>
-                <h2 className="color7 md:text-2xl  fw-700 pb-2">
+                <h2 className="color7 md:text-2xl text-1xl fw-700 pb-2">
                   1 - Automated expenses
                 </h2>
                 <p className="text-[#F5F7FA] f7 max-w-[400px]">

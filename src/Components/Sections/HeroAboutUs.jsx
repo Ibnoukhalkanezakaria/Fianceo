@@ -8,26 +8,39 @@ import sticky1 from "../../assets/HeroAboutUs/stick-1.svg";
 import sticky2 from "../../assets/HeroAboutUs/stick-2.svg";
 import sticky4 from "../../assets/HeroAboutUs/stick-4.svg";
 import teamImage from "../../assets/HeroAboutUs/team-image.png";
-
-import { HeroAboutUsData } from "../../Data/data";
+import DifferentlySection from "./DifferentlySection";
 
 const HeroAboutUs = () => {
-  const { List } = HeroAboutUsData;
   return (
     <div>
       <div className="Wrapper">
         <div className="p100-section">
-          <h1 className="color5 fw-700 md:text-5xl sm:text-4xl text-3xl text-center max-w-[900px] m-auto">
+          <h1
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="500"
+            className="color5 fw-700 md:text-5xl sm:text-4xl text-3xl text-center max-w-[900px] m-auto"
+          >
             We build finance software to empower businesses
           </h1>
           <a href="">
-            <PrimaryButton className="mt-10 m-auto f7">
+            <PrimaryButton
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="500"
+              className="mt-10 m-auto f7"
+            >
               See Our Milestones
             </PrimaryButton>
           </a>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 p50-section justify-center w-[90%] gap-8 m-auto">
-          <div className="flex items-center justify-center gap-20 relative">
+          <div
+            data-aos="zoom-in-right"
+            data-aos-delay="400"
+            data-aos-duration="500"
+            className="flex items-center justify-center gap-20 relative"
+          >
             <img
               src={sticky4}
               alt=""
@@ -39,43 +52,26 @@ const HeroAboutUs = () => {
             </div>
             <img src={image1} alt="" />
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
             <img src={image2} alt="" />
           </div>
-          <div>
+          <div
+            data-aos="zoom-out-right"
+            data-aos-delay="500"
+            data-aos-duration="500"
+          >
             <img src={image3} alt="" />
           </div>
-          <div className="flex items-center gap-2 max-w-[300px]">
+          <div
+            data-aos="zoom-out-up"
+            data-aos-delay="500"
+            data-aos-duration="500"
+            className="flex items-center gap-2 max-w-[300px]"
+          >
             <img src={image5} alt="" />
           </div>
         </div>
-        <div className="p50-section">
-          <div className="flex md:justify-between flex-wrap gap-6 items-center">
-            <div>
-              <h3 className="color5 fw-700 f2">We do this differently</h3>
-            </div>
-            <div>
-              <p className="max-w-[400px]">
-                Erat eleifend lacus mattis at porttitor at mauris vel pharetra.
-                Consequat, dictum
-              </p>
-            </div>
-          </div>
-          <div className="grid md:grid-cols-4 sm:grid-cols-2 gird-cols-1 gap-6 pt-20 pb-[120px] w-full">
-            {List.map((item, i) => {
-              const { val, name, description } = item;
-              return (
-                <div key={i} className="">
-                  <h3 className="color5 fw-700 f2">{val}</h3>
-                  <span className="color5 pt-4 pb-4 block fw-500 f6">
-                    {name}
-                  </span>
-                  <p className="fw-400 max-w-[400px]">{description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        <DifferentlySection />
       </div>
       <div>
         <img src={teamImage} alt="teamImage" className="w-full" />

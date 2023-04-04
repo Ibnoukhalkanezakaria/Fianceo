@@ -6,47 +6,50 @@ import { AiOutlineCheck } from "react-icons/ai";
 const PricingPlan = () => {
   const { List } = PricingPlanData;
   return (
-    <div>
-      <div className="Wrapper mt-[-50px]">
+    <div className="">
+      <div className="Wrapper sm:mt-[-50px] ">
         <div className="relative">
           {List.map((item, i) => {
             const { Avatar, Pack, type, Price, ListOfOptions } = item;
             return (
               <div
+                data-aos="fade-up"
+                data-aos-delay={`${i + 4}00`}
+                data-aos-duration="500"
                 key={i}
-                className="relative z-60 bg-shadow2 p-8 mb-8 one flex gap-4 flex-row bg-color7 min-h-[240px]  max-w-[1000px] m-auto"
+                className="relative z-60 bg-shadow2 p-8 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 mb-8 flex-wrap one  gap-6 flex-row bg-color7 min-h-[240px]  max-w-[1000px] m-auto"
               >
-                <div className="flex flex-col justify-between basis-1/4">
+                <div className="flex flex-col justify-between ">
                   <div>
                     <img src={Avatar} alt="" />
                   </div>
                   <div>
-                    <span className="block">Perfect for</span>
-                    <span className="fw-700 f5 pt-2 block">{Pack}</span>
+                    <span className="block py-3">Perfect for</span>
+                    <span className="fw-700 f5 block">{Pack}</span>
                   </div>
                 </div>
-                <div className="flex flex-col justify-between basis-1/4">
+                <div className="flex flex-col justify-between py-4">
                   <div>
-                    <span className="block">Pricing Plan</span>
-                    <span className="fw-700 f5 pt-2 block">{type}</span>
+                    <span className="block ">Pricing Plan</span>
+                    <span className="fw-700 f5 block py-4">{type}</span>
                   </div>
                   <div className="flex items-end">
-                    <span className="fw-700 f3 pt-2 block">{Price}</span>
+                    <span className="fw-700 f3 block">{Price}</span>
                     /month
                   </div>
                 </div>
-                <div className="flex flex-col justify-between basis-1/4">
+                <div className="flex flex-col justify-between py-4">
                   {ListOfOptions.map((item, i) => {
                     const { name } = item;
                     return (
-                      <span key={i} className="flex gap-2 items-center">
+                      <span key={i} className=" py-2 flex gap-2 items-center">
                         <AiOutlineCheck className="bg-color7 color5 border-[var(--color5)] border rounded-full p-1 text-xl" />
                         {name}
                       </span>
                     );
                   })}
                 </div>
-                <div className="flex items-end basis-1/4">
+                <div className="flex items-end ">
                   <PrimaryButton>Get Started Now</PrimaryButton>
                 </div>
               </div>

@@ -63,7 +63,7 @@ const Nav = () => {
                 </Link>
               </div>
               <div
-                className={`p-4 block lg:hidden duration-500 ${
+                className={`cursor-pointer p-4 block lg:hidden duration-500 ${
                   open ? "bg-color6" : "bg-color5 color7"
                 }`}
               >

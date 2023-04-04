@@ -10,13 +10,26 @@ const SomeStuff = () => {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 items-start">
           {/*  */}
           <div>
-            <h1 className="color5 fw-700 m-auto pb-6 f2">{title}</h1>
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="500"
+              className="color5 fw-700 m-auto pb-6 f2"
+            >
+              {title}
+            </h1>
             <PrimaryButton>Gets Started Now</PrimaryButton>
           </div>
           {List.map((item, i) => {
             const { name, description, image } = item;
             return (
-              <div key={i} className="bg-color7 bg-shadow  ">
+              <div
+                data-aos="fade-up"
+                data-aos-delay={`${i + 4}00`}
+                data-aos-duration="500"
+                key={i}
+                className="bg-color7 bg-shadow  "
+              >
                 <div className="py-8 px-8">
                   <h1 className="color5 fw-700 f4">{name}</h1>
                   <p>{description}</p>

@@ -9,25 +9,53 @@ const HeroPricing = () => {
     <>
       <div className="bg-primary-clr text-center ">
         <div className="Wrapper p120-section relative">
-          <img src={stick1} alt="sticky1" className="absolute top-14 left-48" />
           <img
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="500"
+            src={stick1}
+            alt="sticky1"
+            className="absolute top-14 left-48"
+          />
+          <img
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="500"
             src={stick2}
             alt="sticky1"
             className="absolute right-20 top-20"
           />
           <img
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="500"
             src={stick3}
             alt="sticky1"
             className="absolute bottom-20 right-20"
           />
-          <h2 className="color7 fw-700 max-w-[800px] m-auto f1">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="500"
+            className="color7 fw-700 max-w-[800px] m-auto f1"
+          >
             Choose a plan that’s right for you
           </h2>
-          <p className="color7 max-w-[500px] m-auto pt-6 f7">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="500"
+            className="color7 max-w-[500px] m-auto pt-6 f7"
+          >
             Simple plans that grow with your business. No contracts. No setup
             fees. Choose the right one
           </p>
-          <span className="bg-color7 inline-block mt-6 py-4 px-8 rounded-[30px] cursor-pointer color5">
+          <span
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="500"
+            className="bg-color7 inline-block mt-6 py-4 px-8 rounded-[30px] cursor-pointer color5"
+          >
             Monthly
           </span>
         </div>

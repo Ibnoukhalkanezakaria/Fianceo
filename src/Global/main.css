@@ -205,7 +205,8 @@ p {
   box-shadow: 0 0 50px 1px #ebeaea;
 }
 .bg-shadow2 {
-  box-shadow: 0px 15px 5px 0px #ebebeb;
+  /* box-shadow: 0px 15px 5px 0px #ebebeb; */
+  box-shadow: 0px 15px 1px 0px #f5f5f5;
 }
 
 @media (max-width: 1107px) {
@@ -235,3 +236,14 @@ p {
     order: 1;
   }
 }
+
+/* .paragraph {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s all cubic-bezier(0, 1, 0, 1);
+}
+.paragraph.show {
+  height: auto;
+  max-height: 9999px;
+  transition: 0.5s all cubic-bezier(1, 0, 1, 0);
+} */
