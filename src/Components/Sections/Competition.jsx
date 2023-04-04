@@ -12,16 +12,16 @@ const competition = () => {
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="500"
-          className="fw-700 f2 color5 text-center pb-12"
+          className="fw-700 sm:text-4xl color5 text-center pb-12"
         >
           We break the competition
         </h1>
         <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-10 relative">
-          <span className="bg-color7 translate-50 color5 text-xl rounded-full flex justify-center items-center h-[100px] w-[100px] color5 absolute ">
+          <span className="bg-color7 z-[40] translate-50 color5 text-xl rounded-full flex justify-center items-center h-[100px] w-[100px] color5 absolute ">
             VS
           </span>
           <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
-            <div className="py-8 bg-[#F1F1F1] flex justify-between text-center px-12">
+            <div className="py-8 bg-[#F1F1F1] flex justify-between text-center sm:px-12 px-4">
               {ListOfIntegrated.map((item, i) => {
                 const { name, image } = item;
                 return (
@@ -34,7 +34,7 @@ const competition = () => {
                 );
               })}
             </div>
-            <div className="px-12 py-8 bg-[#F9F9F9]">
+            <div className="sm:px-12 px-6 py-8 bg-[#F9F9F9]">
               {Decisions.map((item, i) => {
                 const { Decision } = item;
                 return (
@@ -65,7 +65,7 @@ const competition = () => {
                     data-aos-delay={`${i + 4}00`}
                     data-aos-duration="500"
                     key={i}
-                    className="px-12 color7 pb-3 flex items-center gap-3"
+                    className="sm:px-12 px-6 color7 pb-3 flex items-center gap-3"
                   >
                     <AiOutlineCheck className="bg-color3 color7 rounded-full p-1 text-xl" />
                     {Decision}

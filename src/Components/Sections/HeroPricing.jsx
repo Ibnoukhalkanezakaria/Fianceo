@@ -37,7 +37,7 @@ const HeroPricing = () => {
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="500"
-            className="color7 fw-700 max-w-[800px] m-auto f1"
+            className="color7 fw-700 max-w-[800px] m-auto sm:text-5xl md:text-center text-left text-4xl"
           >
             Choose a plan that’s right for you
           </h2>
@@ -45,7 +45,7 @@ const HeroPricing = () => {
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="500"
-            className="color7 max-w-[500px] m-auto pt-6 f7"
+            className="color7 max-w-[500px] m-auto pt-6 f7 md:text-center text-left"
           >
             Simple plans that grow with your business. No contracts. No setup
             fees. Choose the right one
@@ -54,7 +54,7 @@ const HeroPricing = () => {
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="500"
-            className="bg-color7 inline-block mt-6 py-4 px-8 rounded-[30px] cursor-pointer color5"
+            className="bg-color7 justify-start flex max-w-max mt-6 py-4 px-8 rounded-[30px] cursor-pointer color5"
           >
             Monthly
           </span>

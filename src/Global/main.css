@@ -176,6 +176,12 @@ p {
   margin-inline: auto;
 }
 
+@media (max-width: 586px) {
+  .Wrapper {
+    --padding: 1rem;
+  }
+}
+
 /* Section */
 
 .p50-section {

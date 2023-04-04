@@ -20,7 +20,7 @@ const Frequently = () => {
           data-aos="fade-up"
           data-aos-delay={`300`}
           data-aos-duration="500"
-          className="color5 fw-700 f2"
+          className="color5 fw-700 sm:text-4xl text-3xl"
         >
           Frequently asked questions
         </h2>
