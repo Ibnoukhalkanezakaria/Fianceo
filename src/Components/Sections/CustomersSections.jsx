@@ -5,7 +5,7 @@ import UpdateSection from "./UpdateSection";
 
 const CustomersSections = () => {
   return (
-    <div className="bg-color7 p120-section">
+    <div className="bg-color7 pt-[100px]">
       <div className="Wrapper">
         <h2
           data-aos="fade-up"

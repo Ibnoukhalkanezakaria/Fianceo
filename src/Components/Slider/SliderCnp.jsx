@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import "./Slider.css";
 
@@ -22,52 +22,61 @@ import stick3 from "../../assets/stick-3.svg";
 import stick4 from "../../assets/stick-4.svg";
 import stick5 from "../../assets/stick-5.svg";
 
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+
 const SliderCnp = () => {
   const { List } = SliderCnpData;
+
+  const SlideRef = useRef();
+
+  const handleNext = () => {
+    SlideRef.current.swiper.slideNext();
+  };
+  const handlePrev = () => {
+    SlideRef.current.swiper.slidePrev();
+  };
+
   return (
-    <div className="">
-      <div className="p100-section ">
-        <div className="relative">
+    <div>
+      <div className="p50-section ">
+        <div className="relative ">
           <div>
             <div>
+              <div
+                onClick={() => handlePrev()}
+                className="absolute left-[2%] z-10 lg:top-[45%] top-[25%] cursor-pointer bg-color7 rounded-full p-4 "
+              >
+                <IoIosArrowBack className="text-2xl" />
+              </div>
+              <div
+                onClick={() => handleNext()}
+                className="absolute z-10 lg:top-[45%] top-[25%] right-0 cursor-pointer bg-color7 rounded-full p-4 "
+              >
+                <IoIosArrowForward className="text-2xl" />
+              </div>
               <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
                 slidesPerView={1}
                 className="slider-swiper"
+                navigation={false}
+                ref={SlideRef}
               >
                 {List.map((item, i) => {
                   return (
                     <SwiperSlide key={i} className=" lg:p-[50px]">
                       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
-                        <div>
-                          <div className="relative">
-                            <div
-                              className="relative "
-                              data-aos="fade-right"
-                              data-aos-delay="400"
-                              data-aos-duration="600"
-                            >
-                              <img src={item.profile} alt="" />
-                            </div>
-                            <img
-                              src={stick4}
-                              alt=""
-                              className="bottom-[-15%] left-[20%] absolute rotate-90"
-                            />
-                            <img
-                              src={stick3}
-                              alt=""
-                              className="absolute right-[15%] top-[80%] w-[150px] z-[-1]"
-                            />
-                            <img
-                              src={stick5}
-                              alt=""
-                              className="absolute left-[-8%] top-[-8.8%] z-[-1]"
-                            />
+                        <div className="relativ lg:m-0 m-auto">
+                          <div
+                            className="relative"
+                            data-aos="fade-right"
+                            data-aos-delay="400"
+                            data-aos-duration="600"
+                          >
+                            <img src={item.profile} alt="" />
                           </div>
                         </div>
-                        <div>
+                        <div className="lg:m-0 m-auto">
                           <div
                             className="flex gap-2"
                             data-aos="fade-up"
@@ -85,7 +94,7 @@ const SliderCnp = () => {
                               data-aos="fade-up"
                               data-aos-delay="400"
                               data-aos-duration="600"
-                              className="color5 sm:text-3xl text-2xl fw-700 block max-w-[600px]"
+                              className="color5 sm:text-3xl text-2xl fw-700 block max-w-[500px]"
                             >
                               {item.description}
                             </q>
