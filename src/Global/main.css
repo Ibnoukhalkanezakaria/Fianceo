@@ -198,14 +198,14 @@ p {
 @media (max-width: 568px) {
   .p50-section {
     padding-block: 25px;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .p100-section {
     padding-block: 50px;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .p120-section {
-    overflow-x: hidden;
+    overflow: hidden;
     padding-block: 60px;
   }
 }
