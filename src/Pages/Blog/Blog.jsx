@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <div>
       <HeroBlog />
-      {/* <RecentBlogs /> */}
+      <RecentBlogs />
     </div>
   );
 };

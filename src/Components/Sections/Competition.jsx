@@ -21,7 +21,7 @@ const competition = () => {
             VS
           </span>
           <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
-            <div className="py-8 bg-[#F1F1F1] flex justify-between text-center sm:px-12 px-4">
+            <div className="py-8 bg-[#F1F1F1] flex justify-between flex-row text-center sm:px-12 px-4">
               {ListOfIntegrated.map((item, i) => {
                 const { name, image } = item;
                 return (

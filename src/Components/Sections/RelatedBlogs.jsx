@@ -12,7 +12,7 @@ const RelatedBlogs = (props) => {
           <div className="gap-6 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
             {...List.filter((e) => e.id !== props.singleBlog)
               .map((item, i) => {
-                const { image, id } = item;
+                const { image, id, date, title } = item;
                 return (
                   <div
                     data-aos="fade-up"
@@ -26,11 +26,9 @@ const RelatedBlogs = (props) => {
                         FINANCE
                       </span>
                       <h4 className="color5 py-3 text-xl leading-7 fw-700">
-                        Keep your self away from social media
+                        {title}
                       </h4>
-                      <span className="text-[14px] text-[#737373]">
-                        December 6, 2021
-                      </span>
+                      <span className="text-[14px] text-[#737373]">{date}</span>
                     </Link>
                   </div>
                 );
