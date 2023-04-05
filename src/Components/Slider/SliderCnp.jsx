@@ -31,7 +31,7 @@ const SliderCnp = () => {
   };
 
   return (
-    <div className="md:mb-40 mb-28">
+    <div className="md:mb-40 mb-14">
       <div className="">
         <div className="relative ">
           <div>
