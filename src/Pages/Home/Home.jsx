@@ -16,6 +16,9 @@ const ExpensesSection = lazy(() =>
 const IntregratedSections = lazy(() =>
   import("../../Components/Sections/IntregratedSections")
 );
+const CompanySection = lazy(() =>
+  import("../../Components/Sections/CompanySection")
+);
 const CustomersSections = lazy(() =>
   import("../../Components/Sections/CustomersSections")
 );
