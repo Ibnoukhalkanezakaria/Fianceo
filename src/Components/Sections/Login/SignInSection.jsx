@@ -1,9 +1,13 @@
 import React from "react";
 
-import googleIcon from "../../assets/Login/Google-icon.svg";
+import googleIcon from "../../../assets/Login/Google-icon.svg";
 import { Link } from "react-router-dom";
 
 import { AiOutlineCheck } from "react-icons/ai";
+
+import { CgMail } from "react-icons/cg";
+
+import "../../Sections/Login/Login.css";
 
 const SignInSection = () => {
   return (
@@ -24,7 +28,7 @@ const SignInSection = () => {
                 data-aos="fade-up"
                 data-aos-delay="400"
                 data-aos-duration="500"
-                className="color5 fw-400 pt-6 m-auto"
+                className="color5 fw-400 pt-4 m-auto"
               >
                 Discover a better way of spandings with fianceo.
               </p>
@@ -51,21 +55,30 @@ const SignInSection = () => {
               <span className="border-b w-[200px] border-[#E5E5E5]"></span>
             </div>
             <div>
-              <form className="flex flex-col gap-3">
-                <input
-                  data-aos="fade-up"
-                  data-aos-delay="700"
-                  data-aos-duration="500"
-                  type="email"
-                  placeholder="Enter your e-mail"
-                  className="outline-none p-5  placeholder:font-sm placeholder:text-[var(--color5)] bg-[#F9F9F9]"
-                />
+              <form className="flex flex-col gap-3 ">
+                <div className="flex bg-[#F9F9F9] items-center">
+                  <div>
+                    <CgMail className="text-2xl" />
+                  </div>
+                  <div>
+                    <input
+                      data-aos="fade-up"
+                      data-aos-delay="700"
+                      data-aos-duration="500"
+                      type="email"
+                      placeholder="Enter your e-mail"
+                      required
+                      className="outline-none p-5 placeholder:font-sm placeholder:text-[var(--color5)] "
+                    />
+                  </div>
+                </div>
                 <input
                   data-aos="fade-up"
                   data-aos-delay="800"
                   data-aos-duration="500"
                   type="password"
                   placeholder="Password"
+                  required
                   className="outline-none p-5 placeholder:font-sm placeholder:text-[var(--color5)] bg-[#F9F9F9]"
                 />
                 <div
@@ -75,20 +88,19 @@ const SignInSection = () => {
                   className="flex justify-between py-6 flex-wrap gap-4"
                 >
                   <div className="flex gap-2 flex-wrap">
-                    <div>
+                    <div className="relative check-box-1">
                       <input
                         type="checkbox"
-                        className={`after:absolute after:top-0 after:w-full after:h-full relative after:content-[''] after:${(
-                          <AiOutlineCheck />
-                        )} appearance-none h-4 w-4 focus:outline-none checked:bg-[var(--color3)] cursor-pointer`}
+                        className="appearance-none h-4 w-4 border border-black  "
                       />
+                      <AiOutlineCheck className="check-1 text-8xl h-3 w-3 absolute top-[10%] left-[12%]" />
                     </div>
                     <div>
                       <label className="fw-300 text-[14px]">Remember me</label>
                     </div>
                   </div>
                   <div>
-                    <Link to="/">
+                    <Link to="/forgetPassword">
                       <span className="underline color5 fw-600">
                         Forget Password?
                       </span>
@@ -113,7 +125,7 @@ const SignInSection = () => {
             >
               <p className="text-[15px] color5 flex gap-1 flex-wrap">
                 <span className="fw-400">Not member yet? </span>
-                <Link to="/">
+                <Link to="/signUp">
                   <span className="underline">Create an account</span>
                 </Link>
               </p>

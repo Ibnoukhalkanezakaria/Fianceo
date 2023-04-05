@@ -11,6 +11,7 @@ import SingleBlog from "./Components/Sections/SingleBlog";
 import Error from "./Pages/Error/Error";
 import SignIn from "./Pages/Login/SignIn";
 import SignUp from "./Pages/Login/SignUp";
+import ForgetPassword from "./Pages/ForgetPassword/ForgetPassword";
 
 // animation on scroll using library AOS
 import Aos from "aos";
@@ -33,6 +34,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/signIn" element={<SignIn />} />
         <Route path="/signUp" element={<SignUp />} />
+        <Route path="/forgetPassword" element={<ForgetPassword />} />
         <Route path="/blog/:singleBlog" element={<SingleBlog />} />
         <Route path="*" element={<Error />} />
       </Routes>
