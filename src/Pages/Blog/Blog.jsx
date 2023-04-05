@@ -1,7 +1,7 @@
-import React, { lazy } from "react";
+import React from "react";
 
-const HeroBlog = lazy(() => import("../../Components/Sections/HeroBlog"));
-const RecentBlogs = lazy(() => import("../../Components/Sections/RecentBlogs"));
+import HeroBlog from "../../Components/Sections/HeroBlog";
+import RecentBlogs from "../../Components/Sections/RecentBlogs";
 
 const Blog = () => {
   return (

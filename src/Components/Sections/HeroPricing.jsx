@@ -1,9 +1,10 @@
-import React, { lazy } from "react";
-const stick1 = lazy(() => import("../../assets/stick-1.svg"));
-const stick2 = lazy(() => import("../../assets/stick-2.svg"));
-const stick3 = lazy(() => import("../../assets/stick-3.svg"));
+import React from "react";
 
-const PricingPlan = lazy(() => import("../PricingPlan/PricingPlan"));
+import stick1 from "../../assets/stick-1.svg";
+import stick2 from "../../assets/stick-2.svg";
+import stick3 from "../../assets/stick-3.svg";
+
+import PricingPlan from "../PricingPlan/PricingPlan";
 
 const HeroPricing = () => {
   return (

@@ -1,8 +1,5 @@
 import React from "react";
-import { lazy } from "react";
-const CompanyImage = lazy(() =>
-  import("../../assets/Company/Company-Image.svg")
-);
+import CompanyImage from "../../assets/Company/Company-Image.svg";
 
 const CompanySection = () => {
   return (

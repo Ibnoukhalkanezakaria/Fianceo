@@ -19,12 +19,14 @@ const Footer = () => {
     <div className="bg-color7">
       <div className="Wrapper pt-8">
         <div
-          className="logo"
+          className="logo cursor-pointer"
           data-aos="fade-up"
           data-aos-delay="400"
           data-aos-duration="600"
         >
-          <img src={Logo} alt="Logo" aria-label="Logo" />
+          <Link to="/">
+            <img src={Logo} alt="Logo" aria-label="Logo" />
+          </Link>
         </div>
         <div
           data-aos="fade-up"
@@ -66,12 +68,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="pt-4">
-                <Link to="/" className="color5">
+                <Link to="/signIn" className="color5">
                   Sign In
                 </Link>
               </li>
               <li className="pt-4">
-                <Link to="/" className="color5">
+                <Link to="/signUp" className="color5">
                   Sign Up
                 </Link>
               </li>

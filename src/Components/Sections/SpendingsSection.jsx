@@ -1,8 +1,6 @@
-import React, { lazy } from "react";
+import React from "react";
 
-const SpendingsImage = lazy(() =>
-  import("../../assets/Spendings/Spendings-img-1.svg")
-);
+import SpendingsImage from "../../assets/Spendings/Spendings-img-1.svg";
 
 import { AiOutlineCheck } from "react-icons/ai";
 

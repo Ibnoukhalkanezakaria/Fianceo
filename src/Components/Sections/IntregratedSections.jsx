@@ -1,5 +1,5 @@
-import React, { lazy } from "react";
-const PrimaryButton = lazy(() => import("../Buttons/PrimaryButton"));
+import React from "react";
+import PrimaryButton from "../Buttons/PrimaryButton";
 
 import { IntregratedSectionsData } from "../../Data/data";
 import { Link } from "react-router-dom";

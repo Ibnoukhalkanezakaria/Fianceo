@@ -1,14 +1,15 @@
-import React, { lazy } from "react";
-const PrimaryButton = lazy(() => import("../Buttons/PrimaryButton"));
-const image1 = lazy(() => import("../../assets/HeroAboutUs/img1.png"));
-const image2 = lazy(() => import("../../assets/HeroAboutUs/img2.png"));
-const image3 = lazy(() => import("../../assets/HeroAboutUs/img3.png"));
-const image5 = lazy(() => import("../../assets/HeroAboutUs/img5.png"));
-const sticky1 = lazy(() => import("../../assets/HeroAboutUs/stick-1.svg"));
-const sticky2 = lazy(() => import("../../assets/HeroAboutUs/stick-2.svg"));
-const sticky4 = lazy(() => import("../../assets/HeroAboutUs/stick-4.svg"));
-const teamImage = lazy(() => import("../../assets/HeroAboutUs/team-image.png"));
-const DifferentlySection = lazy(() => import("./DifferentlySection"));
+import React from "react";
+import PrimaryButton from "../Buttons/PrimaryButton";
+
+import image1 from "../../assets/HeroAboutUs/img1.png";
+import image2 from "../../assets/HeroAboutUs/img2.png";
+import image3 from "../../assets/HeroAboutUs/img3.png";
+import image5 from "../../assets/HeroAboutUs/img5.png";
+import sticky1 from "../../assets/HeroAboutUs/stick-1.svg";
+import sticky2 from "../../assets/HeroAboutUs/stick-2.svg";
+import sticky4 from "../../assets/HeroAboutUs/stick-4.svg";
+import teamImage from "../../assets/HeroAboutUs/team-image.png";
+import DifferentlySection from "./DifferentlySection";
 
 import { Link } from "react-router-dom";
 
@@ -25,7 +26,7 @@ const HeroAboutUs = () => {
           >
             We build finance software to empower businesses
           </h1>
-          <div className="mt-6 ">
+          <div className="mt-10 ">
             <Link to="/">
               <PrimaryButton
                 data-aos="fade-up"

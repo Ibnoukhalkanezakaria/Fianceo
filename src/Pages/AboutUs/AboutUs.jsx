@@ -1,13 +1,9 @@
-import React, { lazy } from "react";
+import React from "react";
 
-const HeroAboutUs = lazy(() => import("../../Components/Sections/HeroAboutUs"));
-const SomeStuff = lazy(() => import("../../Components/Sections/SomeStuff"));
-const GuessedSection = lazy(() =>
-  import("../../Components/Sections/GuessedSection")
-);
-const DiscoverSections = lazy(() =>
-  import("../../Components/Sections/DiscoverSections")
-);
+import HeroAboutUs from "../../Components/Sections/HeroAboutUs";
+import SomeStuff from "../../Components/Sections/SomeStuff";
+import GuessedSection from "../../Components/Sections/GuessedSection";
+import DiscoverSections from "../../Components/Sections/DiscoverSections";
 
 const AboutUs = () => {
   return (

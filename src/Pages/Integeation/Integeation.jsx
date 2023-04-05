@@ -1,9 +1,8 @@
-import React, { lazy } from "react";
+import React from "react";
 
 import { IntregratedSectionsData } from "../../Data/data";
-const DiscoverSections = lazy(() =>
-  import("../../Components/Sections/DiscoverSections")
-);
+
+import DiscoverSections from "../../Components/Sections/DiscoverSections";
 
 const Integeation = () => {
   const { List } = IntregratedSectionsData;

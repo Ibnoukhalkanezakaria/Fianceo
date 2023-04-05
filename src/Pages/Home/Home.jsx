@@ -1,30 +1,14 @@
-import React, { lazy } from "react";
+import React from "react";
 
-const HeroHome = lazy(() => import("../../Components/Sections/HeroHome"));
-const TrustedSection = lazy(() =>
-  import("../../Components/Sections/TrustedSection")
-);
-const FinanceSection = lazy(() =>
-  import("../../Components/Sections/FinanceSection")
-);
-const SpendingsSection = lazy(() =>
-  import("../../Components/Sections/SpendingsSection")
-);
-const ExpensesSection = lazy(() =>
-  import("../../Components/Sections/ExpensesSection")
-);
-const IntregratedSections = lazy(() =>
-  import("../../Components/Sections/IntregratedSections")
-);
-const CompanySection = lazy(() =>
-  import("../../Components/Sections/CompanySection")
-);
-const CustomersSections = lazy(() =>
-  import("../../Components/Sections/CustomersSections")
-);
-const DiscoverSections = lazy(() =>
-  import("../../Components/Sections/DiscoverSections")
-);
+import HeroHome from "../../Components/Sections/HeroHome";
+import TrustedSection from "../../Components/Sections/TrustedSection";
+import FinanceSection from "../../Components/Sections/FinanceSection";
+import SpendingsSection from "../../Components/Sections/SpendingsSection";
+import ExpensesSection from "../../Components/Sections/ExpensesSection";
+import IntregratedSections from "../../Components/Sections/IntregratedSections";
+import CompanySection from "../../Components/Sections/CompanySection";
+import CustomersSections from "../../Components/Sections/CustomersSections";
+import DiscoverSections from "../../Components/Sections/DiscoverSections";
 
 const Home = () => {
   return (

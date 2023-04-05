@@ -1,7 +1,8 @@
-import React, { lazy } from "react";
+import React from "react";
 import { competitionData } from "../../Data/data";
-const Logo = lazy(() => import("../../assets/img-logo2.svg"));
 import { AiOutlineClose, AiOutlineCheck } from "react-icons/ai";
+
+import Logo from "../../assets/img-logo2.svg";
 
 const competition = () => {
   const { ListOfIntegrated, Decisions } = competitionData;

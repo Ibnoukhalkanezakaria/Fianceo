@@ -1,6 +1,6 @@
-import React, { lazy } from "react";
+import React from "react";
 import { SomeStuffData } from "../../Data/data";
-const PrimaryButton = lazy(() => import("../Buttons/PrimaryButton"));
+import PrimaryButton from "../Buttons/PrimaryButton";
 import { Link } from "react-router-dom";
 
 const SomeStuff = () => {
