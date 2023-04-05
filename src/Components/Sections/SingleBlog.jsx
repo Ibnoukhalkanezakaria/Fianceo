@@ -1,7 +1,8 @@
-import React from "react";
+import React, { lazy } from "react";
 import { useParams } from "react-router-dom";
 import { ResourcesSectionData } from "../../Data/data";
-import RelatedBlogs from "../Sections/RelatedBlogs";
+
+const RelatedBlogs = lazy(() => import("../Sections/RelatedBlogs"));
 
 const SingleBlog = () => {
   const { List } = ResourcesSectionData;

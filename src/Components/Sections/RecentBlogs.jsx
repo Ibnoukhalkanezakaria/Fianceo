@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, lazy } from "react";
 import { ResourcesSectionData } from "../../Data/data";
 import { SlEnvolopeLetter } from "react-icons/sl";
-import stick1 from "../../assets/stick-1.svg";
-import stick2 from "../../assets/stick-2.svg";
-import stick3 from "../../assets/stick-3.svg";
+const stick1 = lazy(() => import("../../assets/stick-1.svg"));
+const stick2 = lazy(() => import("../../assets/stick-2.svg"));
+const stick3 = lazy(() => import("../../assets/stick-3.svg"));
+
 import { TfiFacebook, TfiLinkedin } from "react-icons/tfi";
 import { TiSocialTwitter } from "react-icons/ti";
 import { RiInstagramFill } from "react-icons/ri";

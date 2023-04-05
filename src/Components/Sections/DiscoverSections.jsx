@@ -1,9 +1,11 @@
-import React from "react";
-import PrimaryButton from "../Buttons/PrimaryButton";
-import stick1 from "../../assets/stick-1.svg";
-import stick2 from "../../assets/stick-2.svg";
-import stick3 from "../../assets/stick-3.svg";
-import stick4 from "../../assets/stick-4.svg";
+import React, { lazy } from "react";
+const PrimaryButton = lazy(() => import("../Buttons/PrimaryButton"));
+
+const stick1 = lazy(() => import("../../assets/stick-1.svg"));
+const stick2 = lazy(() => import("../../assets/stick-2.svg"));
+const stick3 = lazy(() => import("../../assets/stick-3.svg"));
+const stick4 = lazy(() => import("../../assets/stick-4.svg"));
+
 import { Link } from "react-router-dom";
 
 const DiscoverSections = () => {

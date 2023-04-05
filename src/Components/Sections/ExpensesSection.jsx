@@ -1,9 +1,12 @@
-import React from "react";
-import PrimaryButton from "../Buttons/PrimaryButton";
-import image from "../../assets/Expenses/expenses-img.png";
-import stick1 from "../../assets/stick-1.svg";
-import stick3 from "../../assets/stick-3.svg";
-import stick4 from "../../assets/stick-4.svg";
+import React, { lazy } from "react";
+const image = lazy(() => import("../../assets/Expenses/expenses-img.png"));
+
+const PrimaryButton = lazy(() => import("../Buttons/PrimaryButton"));
+
+const stick1 = lazy(() => import("../../assets/stick-1.svg"));
+const stick3 = lazy(() => import("../../assets/stick-3.svg"));
+const stick4 = lazy(() => import("../../assets/stick-4.svg"));
+
 import { Link } from "react-router-dom";
 
 const ExpensesSection = () => {

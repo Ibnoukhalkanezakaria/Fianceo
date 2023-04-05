@@ -14,6 +14,7 @@ import SignUp from "./Pages/Login/SignUp";
 
 // animation on scroll using library AOS
 import Aos from "aos";
+
 import "aos/dist/aos.css";
 
 function App() {

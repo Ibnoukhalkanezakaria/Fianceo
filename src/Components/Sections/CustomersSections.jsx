@@ -1,7 +1,7 @@
-import React from "react";
+import React, { lazy } from "react";
 
-import SliderCnp from "../Slider/SliderCnp";
-import UpdateSection from "./UpdateSection";
+const SliderCnp = lazy(() => import("../Slider/SliderCnp"));
+const UpdateSection = lazy(() => import("./UpdateSection"));
 
 const CustomersSections = () => {
   return (

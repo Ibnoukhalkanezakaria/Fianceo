@@ -1,9 +1,14 @@
-import React from "react";
-import HeroPricing from "../../Components/Sections/HeroPricing";
-import TrustedSection from "../../Components/Sections/TrustedSection";
-import Competition from "../../Components/Sections/Competition";
-import Frequently from "../../Components/Sections/Frequently";
-import DiscoverSections from "../../Components/Sections/DiscoverSections";
+import React, { lazy } from "react";
+
+const HeroPricing = lazy(() => import("../../Components/Sections/HeroPricing"));
+const TrustedSection = lazy(() =>
+  import("../../Components/Sections/TrustedSection")
+);
+const Competition = lazy(() => import("../../Components/Sections/Competition"));
+const Frequently = lazy(() => import("../../Components/Sections/Frequently"));
+const DiscoverSections = lazy(() =>
+  import("../../Components/Sections/DiscoverSections")
+);
 
 const Pricing = () => {
   return (

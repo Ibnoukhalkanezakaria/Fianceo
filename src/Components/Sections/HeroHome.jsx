@@ -1,6 +1,8 @@
-import React from "react";
-import PrimaryButton from "../Buttons/PrimaryButton";
-import imageHero from "../../assets/hero-img.svg";
+import React, { lazy } from "react";
+
+const PrimaryButton = lazy(() => import("../Buttons/PrimaryButton"));
+const imageHero = lazy(() => import("../../assets/hero-img.svg"));
+
 import { Link } from "react-router-dom";
 
 const HeroHome = () => {

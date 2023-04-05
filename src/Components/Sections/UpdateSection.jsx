@@ -1,6 +1,7 @@
-import React from "react";
+import React, { lazy } from "react";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
+
 import { CustomersSectionsData } from "../../Data/data";
 const UpdateSection = () => {
   const { List, title } = CustomersSectionsData;
