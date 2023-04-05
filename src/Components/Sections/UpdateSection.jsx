@@ -5,7 +5,7 @@ import { CustomersSectionsData } from "../../Data/data";
 const UpdateSection = () => {
   const { List, title } = CustomersSectionsData;
   return (
-    <div className="p120-section ">
+    <div>
       <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
         <h2 className="color5 sm:text-4xl text-3xl sm:text-center fw-700 text-left max-w-[700px] m-auto">
           {title}

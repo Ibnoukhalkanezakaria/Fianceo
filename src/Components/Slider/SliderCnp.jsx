@@ -1,7 +1,5 @@
 import React, { useRef } from "react";
 
-import "./Slider.css";
-
 import { SliderCnpData } from "../../Data/data";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -33,8 +31,8 @@ const SliderCnp = () => {
   };
 
   return (
-    <div>
-      <div className="p100-section ">
+    <div className=" mb-40">
+      <div className="">
         <div className="relative ">
           <div>
             <div>
