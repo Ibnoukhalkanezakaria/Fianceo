@@ -3,7 +3,7 @@ import ForgetPasswordSection from "../../Components/Sections/ForgetPasswordSecti
 
 const ForgetPassword = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <ForgetPasswordSection />
     </div>
   );

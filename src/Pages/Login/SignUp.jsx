@@ -3,7 +3,7 @@ import SignUpSection from "../../Components/Sections/Login/SignUpSection";
 
 const SignUp = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <SignUpSection />
     </div>
   );
