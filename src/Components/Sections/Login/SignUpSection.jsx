@@ -3,6 +3,9 @@ import React from "react";
 import googleIcon from "../../../assets/Login/Google-icon.svg";
 import { Link } from "react-router-dom";
 import { AiOutlineCheck } from "react-icons/ai";
+import { BsFillPersonFill } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
+import { RiLockPasswordFill } from "react-icons/ri";
 
 const SignUpSection = () => {
   return (
@@ -31,7 +34,7 @@ const SignUpSection = () => {
                 data-aos="fade-up"
                 data-aos-delay="500"
                 data-aos-duration="500"
-                className="mt-8 flex items-center bg-[#F9F9F9] gap-3 justify-center p-4 rounded-md"
+                className="mt-8 flex cursor-pointer items-center bg-[#F9F9F9] gap-3 justify-center p-4 rounded-md"
               >
                 <span>
                   <img src={googleIcon} alt="" />
@@ -51,33 +54,60 @@ const SignUpSection = () => {
             </div>
             <div>
               <form className="flex flex-col gap-3">
-                <input
+                <div
                   data-aos="fade-up"
                   data-aos-delay="700"
                   data-aos-duration="500"
-                  type="name"
-                  placeholder="Type your name"
-                  required
-                  className="outline-none p-5  placeholder:font-sm placeholder:text-[var(--color5)] bg-[#F9F9F9]"
-                />
-                <input
+                  className="flex items-center bg-[#F9F9F9]"
+                >
+                  <div className="ml-4">
+                    <BsFillPersonFill className="text-xl" />
+                  </div>
+                  <div className="w-full">
+                    <input
+                      type="name"
+                      placeholder="Type your name"
+                      required
+                      className="outline-none py-5 px-4 bg-transparent placeholder:font-sm placeholder:text-[var(--color5)] "
+                    />
+                  </div>
+                </div>
+                <div
                   data-aos="fade-up"
                   data-aos-delay="700"
                   data-aos-duration="500"
-                  type="email"
-                  placeholder="Enter your e-mail"
-                  required
-                  className="outline-none p-5  placeholder:font-sm placeholder:text-[var(--color5)] bg-[#F9F9F9]"
-                />
-                <input
+                  className="flex items-center bg-[#F9F9F9]"
+                >
+                  <div className="ml-4">
+                    <MdEmail className="text-xl" />
+                  </div>
+                  <div className="w-full">
+                    <input
+                      type="email"
+                      placeholder="Enter your e-mail"
+                      required
+                      className="outline-none py-5 px-4 bg-transparent placeholder:font-sm placeholder:text-[var(--color5)] "
+                    />
+                  </div>
+                </div>
+                <div
                   data-aos="fade-up"
                   data-aos-delay="800"
                   data-aos-duration="500"
-                  type="password"
-                  placeholder="Password"
-                  required
-                  className="outline-none p-5 placeholder:font-sm placeholder:text-[var(--color5)] bg-[#F9F9F9]"
-                />
+                  className="flex items-center bg-[#F9F9F9]"
+                >
+                  <div className="ml-4">
+                    <RiLockPasswordFill className="text-xl" />
+                  </div>
+                  <div className="w-full">
+                    <input
+                      type="password"
+                      placeholder="Password"
+                      required
+                      className="outline-none py-5 px-4 bg-transparent placeholder:font-sm placeholder:text-[var(--color5)] "
+                    />
+                  </div>
+                </div>
                 <div
                   data-aos="fade-up"
                   data-aos-delay="900"
@@ -95,8 +125,14 @@ const SignUpSection = () => {
                     </div>
                     <div>
                       <label className="fw-300 text-[14px]">
-                        I agree <span className="color4">Terms</span> with and
-                        <span className="color4"> Privacy</span>
+                        I agree{" "}
+                        <span className="color4">
+                          <Link>Terms</Link>
+                        </span>{" "}
+                        with and
+                        <span className="color4">
+                          <Link> Privacy</Link>
+                        </span>
                       </label>
                     </div>
                   </div>
