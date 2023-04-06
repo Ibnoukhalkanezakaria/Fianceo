@@ -2,9 +2,9 @@ import React from "react";
 
 import PrimaryButton from "../Buttons/PrimaryButton";
 
-import imageHero from "../../assets/hero-img.svg";
-
 import { Link } from "react-router-dom";
+
+import imageHero from "../../assets/hero-img.svg";
 
 const HeroHome = () => {
   return (
