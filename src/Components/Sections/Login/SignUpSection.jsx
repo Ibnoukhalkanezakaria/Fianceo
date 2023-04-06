@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import googleIcon from "../../../assets/Login/Google-icon.svg";
 import { Link } from "react-router-dom";
@@ -8,6 +8,17 @@ import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 
 const SignUpSection = () => {
+  const [alert, setAlert] = useState(false);
+
+  const handleForm = (event) => {
+    event.preventDefault();
+    setAlert(true);
+  };
+
+  if (alert) {
+    window.alert("cannot be submitted.");
+  }
+
   return (
     <div className="bg-color7 p100-section">
       <div className="Wrapper  max-w-[432px] m-auto">
@@ -53,7 +64,7 @@ const SignUpSection = () => {
               <span className="border-b w-[200px] border-[#E5E5E5]"></span>
             </div>
             <div>
-              <form className="flex flex-col gap-3">
+              <form onSubmit={handleForm} className="flex flex-col gap-3">
                 <div
                   data-aos="fade-up"
                   data-aos-delay="700"
@@ -104,7 +115,7 @@ const SignUpSection = () => {
                       type="password"
                       placeholder="Password"
                       required
-                      className="outline-none py-5 px-4 bg-transparent placeholder:font-sm placeholder:text-[var(--color5)] "
+                      className="outline-none py-5 px-4 w-full placeholder:font-sm placeholder:text-[var(--color5)] "
                     />
                   </div>
                 </div>
@@ -117,6 +128,7 @@ const SignUpSection = () => {
                   <div className="flex gap-2 flex-wrap">
                     <div>
                       <input
+                        required
                         type="checkbox"
                         className={`after:absolute after:top-0 after:w-full after:h-full relative after:content-[''] after:${(
                           <AiOutlineCheck />
@@ -150,7 +162,7 @@ const SignUpSection = () => {
                   data-aos-duration="500"
                   type="submit"
                   value="Log in"
-                  className="bg-color3 color7 py-5 px-4 rounded-md text-center cursor-pointer hover:opacity-80 w-full"
+                  className="bg-color3 color7 py-5 px-4 rounded-md text-center cursor-pointer  w-full"
                 />
               </form>
             </div>

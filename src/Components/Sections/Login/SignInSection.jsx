@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import googleIcon from "../../../assets/Login/Google-icon.svg";
 import { AiOutlineCheck } from "react-icons/ai";
@@ -8,6 +8,17 @@ import { Link } from "react-router-dom";
 import "../../Sections/Login/Login.css";
 
 const SignInSection = () => {
+  const [alert, setAlert] = useState(false);
+
+  const handleForm = (event) => {
+    event.preventDefault();
+    setAlert(true);
+  };
+
+  if (alert) {
+    window.alert("cannot be submitted.");
+  }
+
   return (
     <div className="bg-color7 p100-section">
       <div className="Wrapper  max-w-[432px] m-auto">
@@ -53,7 +64,7 @@ const SignInSection = () => {
               <span className="border-b w-[200px] border-[#E5E5E5]"></span>
             </div>
             <div>
-              <form className="flex flex-col gap-3">
+              <form onSubmit={handleForm} className="flex flex-col gap-3">
                 <div
                   data-aos="fade-up"
                   data-aos-delay="700"
@@ -99,6 +110,7 @@ const SignInSection = () => {
                   <div className="flex gap-2 flex-wrap">
                     <div>
                       <input
+                        required
                         type="checkbox"
                         className={`after:absolute after:top-0 after:w-full after:h-full relative after:content-[''] after:${(
                           <AiOutlineCheck />

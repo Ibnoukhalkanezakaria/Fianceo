@@ -31,7 +31,7 @@ const ForgetPasswordSection = () => {
               <form onSubmit={handleSubmit} className="flex flex-col gap-3 ">
                 <div
                   data-aos="fade-up"
-                  data-aos-delay="700"
+                  data-aos-delay="300"
                   data-aos-duration="500"
                   className="flex items-center bg-[#F9F9F9]"
                 >
@@ -49,7 +49,7 @@ const ForgetPasswordSection = () => {
                 </div>
                 <input
                   data-aos="fade-up"
-                  data-aos-delay="1000"
+                  data-aos-delay="400"
                   data-aos-duration="500"
                   type="submit"
                   value="Submit"
@@ -60,7 +60,7 @@ const ForgetPasswordSection = () => {
           </div>
           <div
             data-aos="fade-up"
-            data-aos-delay="1100"
+            data-aos-delay="500"
             data-aos-duration="500"
             className="pt-6 flex justify-center"
           >
