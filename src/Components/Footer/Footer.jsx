@@ -120,7 +120,7 @@ const Footer = () => {
         <div className="flex flex-row flex-wrap gap-6 justify-between py-8">
           <div>
             <p className="fw-400 ">
-              © Ibnoukhalkane {today} Fianceo. Design by Webflow, checkout the
+              © Ibnoukhalkane {today} Fianceo. Design by Basecom, checkout the
               repository
               <a
                 target="_blank"
