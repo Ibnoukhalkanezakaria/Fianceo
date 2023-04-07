@@ -52,14 +52,16 @@ const HeroPricing = () => {
             Simple plans that grow with your business. No contracts. No setup
             fees. Choose the right one
           </p>
-          <span
+          <div
+            className="mt-8"
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="500"
-            className="bg-color7 sm:justify-center sm:m-auto justify-start flex max-w-max mt-6 py-4 px-8 rounded-[30px] cursor-pointer color5"
           >
-            Monthly
-          </span>
+            <span className="bg-color7 sm:justify-center sm:m-auto justify-start flex max-w-max  py-4 px-8 rounded-[30px] cursor-pointer color5">
+              Monthly
+            </span>
+          </div>
         </div>
       </div>
       <PricingPlan />
