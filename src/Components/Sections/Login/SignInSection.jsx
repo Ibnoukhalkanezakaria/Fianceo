@@ -5,7 +5,6 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import "../../Sections/Login/Login.css";
 
 const SignInSection = () => {
   const [alert, setAlert] = useState(false);
@@ -108,26 +107,17 @@ const SignInSection = () => {
                   className="flex justify-between py-6 flex-wrap gap-4"
                 >
                   <div className="flex gap-2 flex-wrap">
-                    <div>
+                    <label htmlFor="check-box" className="relative">
                       <input
-                        required
+                        id="check-box"
                         type="checkbox"
-                        className={`after:absolute after:top-0 after:w-full after:h-full relative after:content-[''] after:${(
-                          <AiOutlineCheck />
-                        )} appearance-none h-4 w-4 focus:outline-none checked:bg-[var(--color3)] cursor-pointer`}
+                        required
+                        className="appearance-none w-4 rounded-sm h-4 border checked:bg-[var(--color3)]"
                       />
-                    </div>
+                      <AiOutlineCheck className="absolute top-0 color7 left-0" />
+                    </label>
                     <div>
-                      <label className="fw-300 text-[14px]">
-                        I agree{" "}
-                        <span className="color4">
-                          <Link>Terms</Link>
-                        </span>{" "}
-                        with and
-                        <span className="color4">
-                          <Link> Privacy</Link>
-                        </span>
-                      </label>
+                      <span className="fw-300 text-[14px]">Remember Me</span>
                     </div>
                   </div>
                   <div>
